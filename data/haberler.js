@@ -1,0 +1,132 @@
+/* Memur Bülteni haberleri. Yeni haber en üste eklenir. manset:true olanlar ana ekranda kayar manşette görünür. */
+window.MB_HABERLER = {
+ "guncelleme": "2026-11-25",
+ "iletisim": "memurbultenisite@gmail.com",
+ "haberler": [
+  {
+   "id": "x6",
+   "tarih": "2026-11-25",
+   "kategori": "İŞKUR",
+   "manset": true,
+   "baslik": "Şırnak'ta İŞKUR üzerinden 3.000 kişilik alım başladı",
+   "ozet": "İşgücü Uyum Programı (İUP) kapsamında 3.000 kişi 7 ay süreyle istihdam edilecek.",
+   "metin": "Şırnak Çalışma ve İş Kurumu İl Müdürlüğü, İşgücü Uyum Programı (İUP) kapsamında 3.000 kişinin 7 ay süreyle istihdam edileceğini duyurdu.\n\nKONTENJAN DAĞILIMI\n• Şırnak Valiliği: 300\n• Şırnak İl Millî Eğitim Müdürlüğü: 450\n• Cizre İlçe Millî Eğitim Müdürlüğü: 500\n• Silopi İlçe Millî Eğitim Müdürlüğü: 500\n• İdil İlçe Millî Eğitim Müdürlüğü: 350\n• Uludere İlçe Millî Eğitim Müdürlüğü: 350\n• Beytüşşebap İlçe Millî Eğitim Müdürlüğü: 200\n• Güçlükonak İlçe Millî Eğitim Müdürlüğü: 200\n• İdil Kaymakamlığı: 150\n\nBAŞVURU ŞARTLARI\n• Türkiye Cumhuriyeti vatandaşı olmak\n• İŞKUR'a kayıtlı işsiz olmak\n• 18 yaşını tamamlamış olmak\n• Sigortalı olmamak\n• Hane geliri şartını sağlamak (net asgari ücretin iki katı sınırı)\n\nBaşvuru tarihleri ve ayrıntılar için İŞKUR'daki ilanı kontrol et.",
+   "kaynak": "Memur Bülteni (X)",
+   "kaynakUrl": "https://x.com/memurbulteni"
+  },
+  {
+   "id": "x5",
+   "tarih": "2026-11-25",
+   "kategori": "İŞKUR",
+   "manset": true,
+   "baslik": "Kahramanmaraş'ta KPSS şartsız 2.100 kişilik İUP alımı",
+   "ozet": "11 ilçenin Millî Eğitim Müdürlüklerine bağlı kurumlarda görev yapılacak. Başvurular 23–27 Kasım'da İŞKUR'da.",
+   "metin": "İŞKUR İşgücü Uyum Programı (İUP) kapsamında Kahramanmaraş'taki 11 ilçenin Millî Eğitim Müdürlüklerine bağlı kurumlarında görevlendirilmek üzere toplam 2.100 kişilik kontenjan ayrıldığı bildirildi.\n\nKONTENJANI BELİRLENEN İLÇELER\n• Elbistan: 250 kişi\n• Afşin: 160 kişi\n• Andırın: 78 kişi\n• Ekinözü: 45 kişi\n\nOnikişubat, Dulkadiroğlu, Göksun, Türkoğlu, Pazarcık, Çağlayancerit ve Nurhak ilçelerinin kontenjanları henüz teyit edilemedi.\n\nBAŞVURU DETAYLARI\n• Toplam kontenjan: 2.100 kişi\n• KPSS şartı: Yok\n• Başvuru tarihleri: 23–27 Kasım 2026\n• Noter kurası: 2 Aralık 2026\n• İşbaşı tarihi: 7 Aralık 2026\n• Program bitişi: 30 Haziran 2027\n• Başvuru platformu: İŞKUR\n\nAdayların başvuru öncesinde İŞKUR üzerinden ilgili ilanın şartlarını kontrol etmeleri gerekiyor.",
+   "kaynak": "Memur Bülteni (X)",
+   "kaynakUrl": "https://x.com/memurbulteni"
+  },
+  {
+   "id": "x4",
+   "tarih": "2026-11-25",
+   "kategori": "İŞKUR",
+   "baslik": "Aksaray'da KPSS şartsız 1.216 kişilik İUP başvuruları başladı",
+   "ozet": "17 kamu kurumunda toplam 1.216 kişi için başvurular İŞKUR üzerinden alınıyor.",
+   "metin": "İŞKUR İşgücü Uyum Programı (İUP) kapsamında Aksaray genelinde 17 kamu kurumunda toplam 1.216 kişi için başvurular başladı.\n\nKURUM KURUM KONTENJAN DAĞILIMI\n• Ortaköy Kaymakamlığı: 300\n• İl Sağlık Müdürlüğü: 270\n• İl Millî Eğitim Müdürlüğü: 200\n• Eskil İlçe Millî Eğitim Müdürlüğü: 118\n• Sultanhanı İlçe Millî Eğitim Müdürlüğü: 57\n• Ağaçören Kaymakamlığı: 48\n• Gülağaç Kaymakamlığı: 40\n• Aksaray Üniversitesi: 37\n• Güzelyurt Kaymakamlığı: 30\n• İl Özel İdaresi: 30\n• Defterdarlık: 20\n• İl Tarım ve Orman Müdürlüğü: 16\n• İl Jandarma Komutanlığı: 15\n• Sosyal Güvenlik İl Müdürlüğü: 12\n• Çevre, Şehircilik ve İklim Değişikliği İl Müdürlüğü: 10\n• İl Nüfus ve Vatandaşlık Müdürlüğü: 7\n• AFAD: 6\n\nBAŞVURU ŞARTLARI\n• T.C. vatandaşı olmak\n• 18 yaşını doldurmuş olmak\n\nTarihler ve diğer şartlar için İŞKUR'daki ilanı kontrol et.",
+   "kaynak": "Memur Bülteni (X)",
+   "kaynakUrl": "https://x.com/memurbulteni"
+  },
+  {
+   "id": "x3",
+   "tarih": "2026-11-25",
+   "kategori": "İŞKUR",
+   "baslik": "Trabzon'da KPSS'siz 473 kişilik İUP alımı",
+   "ozet": "7 kamu kurumunda görev yapılacak. Günlük ödeme 1.375 TL, son başvuru 28 Kasım.",
+   "metin": "İŞKUR İşgücü Uyum Programı (İUP) kapsamında Trabzon'da 7 farklı kamu kurumunda görevlendirilmek üzere toplam 473 kişilik kontenjan açıldı.\n\nKONTENJAN DAĞILIMI\n• Trabzon İl Millî Eğitim Müdürlüğü: 130\n• KTÜ İdari ve Mali İşler Daire Başkanlığı: 115\n• Ortahisar İlçe Müftülüğü: 100\n• KTÜ Farabi Hastanesi: 85\n• Akçaabat Cumhuriyet Başsavcılığı: 25\n• Trabzon Defterdarlığı: 10\n• Kültür Varlıklarını Koruma Müdürlüğü: 8\n\nBAŞVURU ŞARTLARI\n• T.C. vatandaşı olmak\n• 18 yaşını tamamlamış olmak\n• İŞKUR'a kayıtlı işsiz olmak\n• Emekli aylığı almamak\n• Hane geliri ve ikamet şartlarını taşımak\n• KPSS şartı aranmıyor\n\nÖDEME VE PROGRAM DETAYLARI\n• Günlük ödeme: 1.375 TL\n• İlk 4 hafta haftada 5 gün, sonrasında haftada 3 gün katılım\n• Genel sağlık sigortası ile iş kazası ve meslek hastalığı sigortası sağlanacak\n\nBAŞVURU TARİHLERİ\n• Başlangıç: 24 Kasım 2026\n• Son başvuru: 28 Kasım 2026",
+   "kaynak": "Memur Bülteni (X)",
+   "kaynakUrl": "https://x.com/memurbulteni"
+  },
+  {
+   "id": "x2",
+   "tarih": "2026-11-25",
+   "kategori": "Ücret",
+   "baslik": "Açık öğretim sınavlarında görev ücretleri gündemde",
+   "ozet": "Salon başkanına 2.323 TL, gözetmene 2.124 TL ödenmesi bekleniyor. Başvurular MEBBİS'ten.",
+   "metin": "Açık Öğretim Kurumları 1. dönem yazılı sınavlarında görev alacak personele ödeneceği belirtilen sınav görev ücretleri paylaşıldı.\n\nGÖREV ÜCRETLERİ\n• Salon Başkanı: 2.323 TL\n• Gözetmen: 2.124 TL\n• Yedek Gözetmen: 1.858 TL\n• Yardımcı Engelli Gözetmen: 2.655 TL\n\nSınavlarda görev almak isteyen eğitim personeli başvurularını MEBBİS üzerinden yapabilecek.\n\nSınav tarihi ve kesinleşen görev ücretleri için MEB'in resmî duyurularının takip edilmesi gerekiyor.",
+   "kaynak": "Memur Bülteni (X)",
+   "kaynakUrl": "https://x.com/memurbulteni"
+  },
+  {
+   "id": "x1",
+   "tarih": "2026-11-25",
+   "kategori": "Atama",
+   "manset": true,
+   "baslik": "Valiler kararnamesi yayımlandı: 41 ilin valisi değişti",
+   "ozet": "2026/398 sayılı kararla 41 ile yeni vali atandı, 14 vali İçişleri Bakanlığı emrine alındı.",
+   "metin": "Cumhurbaşkanı Recep Tayyip Erdoğan'ın imzasıyla 25 Kasım 2026 tarihli Resmî Gazete'de yayımlanan 2026/398 sayılı karar kapsamında 41 ile yeni vali atanırken 14 vali İçişleri Bakanlığı emrine alındı. Toplam 59 ismin görevinde değişikliğe gidildi.\n\nDİĞER ÜST DÜZEY ATAMALAR\n• AFAD Başkanı: Önder Bozkurt\n• 112 Acil Çağrı ve Koordinasyon Genel Müdürü: Tarık Bahadır\n• İçişleri Bakanlığı Teftiş Kurulu Başkanı: Ali Baştürk\n• İçişleri Bakanlığı Avrupa Birliği ve Dış İlişkiler Dairesi Başkanı: Bülent Ay\n\nYeni atanan valilerin tam listesi Resmî Gazete'de yer alıyor.",
+   "kaynak": "Resmî Gazete, 2026/398 sayılı Cumhurbaşkanı Kararı",
+   "kaynakUrl": "https://www.resmigazete.gov.tr"
+  },
+  {
+   "id": "h6",
+   "tarih": "2026-11-25",
+   "kategori": "Alım",
+   "manset": true,
+   "baslik": "İçişleri Bakanlığı 1.170 sözleşmeli personel alacak",
+   "ozet": "Lise, ön lisans ve lisans mezunları başvurabilecek. Başvurular 7–11 Aralık'ta e-Devlet üzerinden.",
+   "metin": "İçişleri Bakanlığı 1.170 sözleşmeli personel alımı için ilan yayımladı.\n\n• Puan türü: KPSS P3, P93 veya P94 (kadroya göre)\n• En az puan: 60\n• Başvuru: 7–11 Aralık 2026, e-Devlet\n• Sınav: sözlü sınav\n\nKadro dağılımı ve aranan şartlar için ilanın tamamını mutlaka oku.",
+   "kaynak": "ilan.gov.tr",
+   "kaynakUrl": "https://www.ilan.gov.tr/ilan/2299814/kamu-akademik-personel-kamu-personel-alim-ve-sinavlari-icisleri-bakanligi-1170-sozlesmeli-personel-alim-ilani"
+  },
+  {
+   "id": "h5",
+   "tarih": "2026-11-25",
+   "kategori": "Maaş",
+   "manset": true,
+   "baslik": "Temmuz–Aralık 2026 memur maaş katsayıları",
+   "ozet": "Aylık katsayı 1,575512 oldu. En düşük memur maaşı aile yardımı dahil 70.224 TL.",
+   "metin": "1 Temmuz – 31 Aralık 2026 döneminde uygulanan memur maaş katsayıları:\n\n• Aylık katsayı: 1,575512\n• Taban aylık katsayısı: 25,794915\n• Yan ödeme katsayısı: 0,499649\n\nTemmuz artışı %13,52 olarak uygulandı. En düşük memur maaşı aile yardımı dahil 70.224 TL'ye yükseldi.\n\nOcak 2027 katsayıları açıklandığında burada paylaşacağız.",
+   "kaynak": "Hazine ve Maliye Bakanlığı genelgesi (alomaliye.com)",
+   "kaynakUrl": "https://www.alomaliye.com/memur-maas-katsayisi/"
+  },
+  {
+   "id": "h4",
+   "tarih": "2026-11-25",
+   "kategori": "Alım",
+   "baslik": "Kaymakam adaylığı sınavı: 60 kişi alınacak",
+   "ozet": "Ön başvuru 1–7 Aralık, nihai başvuru 16–21 Aralık. KPSS P32 puanı isteniyor.",
+   "metin": "İçişleri Bakanlığı 60 kaymakam adayı alacak.\n\n• Puan türü: KPSS P32\n• Ön başvuru: 1–7 Aralık 2026\n• Nihai başvuru: 16–21 Aralık 2026\n• Sınav: yazılı sınav ve mülakat\n\nAranan bölümler ve diğer şartlar için ilanın tamamını oku.",
+   "kaynak": "ilan.gov.tr",
+   "kaynakUrl": "https://www.ilan.gov.tr/ilan/2293975/kamu-akademik-personel-kamu-personel-alim-ve-sinavlari-icisleri-bakanligi-kaymakam-adayligi-sinav-ilani"
+  },
+  {
+   "id": "h3",
+   "tarih": "2026-11-24",
+   "kategori": "Alım",
+   "baslik": "TÜRKAK sözleşmeli koruma ve güvenlik görevlisi alıyor",
+   "ozet": "Ön lisans mezunları KPSS P93 ile başvurabilir. Son gün 7 Aralık.",
+   "metin": "Türk Akreditasyon Kurumu sözleşmeli koruma ve güvenlik görevlisi alımı yapacak.\n\n• Puan türü: KPSS P93\n• Başvuru: 23 Kasım – 7 Aralık 2026, Kariyer Kapısı\n• Sınav: sözlü sınav\n\nÖzel güvenlik kimlik kartı gibi şartlar için ilanı kontrol et.",
+   "kaynak": "ilan.gov.tr",
+   "kaynakUrl": "https://www.ilan.gov.tr/ilan/2299654/kamu-akademik-personel-kamu-personel-alim-ve-sinavlari-turk%20akreditasyon%20kurumundan-sozlesmeli-koruma-ve-guvenlik-gorevlisi-alim-ilani"
+  },
+  {
+   "id": "h2",
+   "tarih": "2026-11-24",
+   "kategori": "Son gün",
+   "baslik": "AFAD uzman ve denetçi yardımcılığı başvuruları 30 Kasım'da bitiyor",
+   "ozet": "Uzman yardımcılığı için en az 60, denetçi yardımcılığı için en az 80 KPSS puanı isteniyor.",
+   "metin": "Afet ve Acil Durum Yönetimi Başkanlığı'nın iki giriş sınavında başvurular 30 Kasım 2026'da sona eriyor.\n\n• Uzman yardımcısı: en az 60 puan (P4, P8, P9, P16, P21, P32, P43)\n• Denetçi yardımcısı: en az 80 puan (P3, P13, P33, P48)\n• Başvuru: Kariyer Kapısı",
+   "kaynak": "ilan.gov.tr",
+   "kaynakUrl": "https://www.ilan.gov.tr/ilan/2292235/kamu-akademik-personel-kamu-personel-alim-ve-sinavlari-afet-ve-acil-durum-yonetimi-baskanligi-uzman-yardimcisi-giris-sinavi-ilani"
+  },
+  {
+   "id": "h1",
+   "tarih": "2026-11-23",
+   "kategori": "KPSS",
+   "baslik": "KPSS-2026/2 tercihleri Aralık'ta bekleniyor",
+   "ozet": "Kılavuz yayınlanınca kadrolar Tercih Robotu'na eklenecek. Şimdiden geçen dönemin tabanlarına bakabilirsin.",
+   "metin": "KPSS-2026/2 merkezi atama tercihlerinin 17–24 Aralık tarihlerinde yapılması bekleniyor. Kesin tarihler ÖSYM kılavuzuyla açıklanacak.\n\nKılavuz yayınlanır yayınlanmaz kadroları Tercih Robotu'na ekleyeceğiz. O zamana kadar Tercih sekmesinden KPSS-2026/1'de puanının hangi kadrolara yettiğine bakabilirsin.",
+   "kaynak": "Memur Bülteni",
+   "kaynakUrl": ""
+  }
+ ]
+};
