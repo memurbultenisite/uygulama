@@ -1,7 +1,7 @@
 {
   "name": "Memur Bülteni: İlan & Haber",
   "short_name": "Memur Bülteni",
-  "description": "Kamu personel ilanları, KPSS tercih robotu ve geçmiş taban puanlar tek yerde.",
+  "description": "Memur ve kamu personeli haberleri, güncel kamu ilanları ve memurların sohbet alanı.",
   "lang": "tr",
   "start_url": "./index.html",
   "scope": "./",
