@@ -5,6 +5,19 @@ window.MB_HABERLER = {
  "iletisim": "memurbultenisite@gmail.com",
  "haberler": [
   {
+   "id": "ig_18139143985661271",
+   "tarih": "2026-11-27",
+   "saat": "00:38",
+   "kategori": "Alım & İlan",
+   "manset": true,
+   "baslik": "AVRUPA BİRLİĞİ BAŞKANLIĞI 70 KPSS PUANIYLA 5 PERSONEL ALACAK!",
+   "ozet": "Avrupa Birliği Başkanlığı, lise ve ön lisans mezunu adaylar arasından 5 sözleşmeli destek personeli (şoför) alımı yapacak.",
+   "metin": "📌 KADRO VE KONTENJAN\n\n▪️ Destek Personeli (Şoför): 5 kişi\n\n📌 BAŞVURU ŞARTLARI\n\n▪️ Lise veya ön lisans mezunu olmak.\n▪️ 2026 KPSS P94 veya P93 puan türünden en az 70 puan almış olmak.\n▪️ En az 3 yıldır B sınıfı veya üzeri sürücü belgesine sahip olmak.\n▪️ Görevini devamlı yapmasına engel olabilecek bir hastalığı bulunmamak.\n▪️ Yurdun her yerinde ve her türlü iklim koşulunda görev yapmaya elverişli olmak.\n▪️ Seyahat engeli bulunmamak.\n▪️ 7/24 vardiyalı çalışma düzenine uygun olmak.\n\n📅 BAŞVURU TARİHLERİ\n\n▪️ Başlangıç: 27 Kasım 2026\n▪️ Bitiş: 14 Aralık 2026\n\nAdayların başvuru öncesinde kurumun resmî ilanını incelemeleri gerekiyor.\n\n📢 Kamu personeli alımlarından ve atama fırsatlarından haberdar olmak için @memurbulteni'ni takip edin.",
+   "kaynak": "Memur Bülteni · Instagram",
+   "kaynakUrl": "https://www.instagram.com/p/DgOFt10kZjt/",
+   "gorsel": "data/ig/18139143985661271.jpg"
+  },
+  {
    "id": "ig_18001989684043087",
    "tarih": "2026-11-26",
    "saat": "23:30",
@@ -903,19 +916,6 @@ window.MB_HABERLER = {
    "kaynak": "Memur Bülteni · Instagram",
    "kaynakUrl": "https://www.instagram.com/p/DgClLFMR3AO/",
    "gorsel": "data/ig/18505540753101675.jpg"
-  },
-  {
-   "id": "ig_17893592868686507",
-   "tarih": "2026-11-22",
-   "saat": "12:01",
-   "kategori": "Öğretmen",
-   "manset": true,
-   "baslik": "MESEM ÖĞRENCİLERİNİN GÜVENLİĞİ İÇİN MİLLÎ EĞİTİM BAKANLIĞINA ÇAĞRI!",
-   "ozet": "Mesleki Eğitim Merkezlerinde (MESEM) eğitim gören öğrencilerimiz, bir yandan meslek öğrenirken diğer yandan geleceğin nitelikli iş gücünü oluşturmak üzere önemli bir eğitim sürecinden geçiyor.",
-   "metin": "Millî Eğitim Bakanlığımızın mesleki eğitimi geliştirmek ve öğrencilerimize daha iyi imkânlar sunmak amacıyla yürüttüğü çalışmaların yanında, öğrencilerimizin güvenliğinin ve haklarının korunmasına yönelik tedbirlerin daha da güçlendirilmesinin faydalı olacağına inanıyoruz.\n\nÖzellikle çocuk yaşta çalışma hayatıyla tanışan öğrencilerimizin güvenli, sağlıklı ve huzurlu ortamlarda eğitim görmesi hepimizin ortak temennisidir.\n\nBu kapsamda;\n\n- İşletmelerde gerçekleştirilen denetimlerin daha da güçlendirilmesi,\n- Öğrencilerin fiziksel ve psikolojik güvenliğine yönelik koruyucu tedbirlerin artırılması,\n- Öğrencilerimizin karşılaşabilecekleri olumsuzlukları güvenle bildirebilecekleri mekanizmaların geliştirilmesi,\n- Okul, aile ve işletme arasındaki iletişim ve koordinasyonun güçlendirilmesi,\n- İş sağlığı ve güvenliği konusunda farkındalık çalışmalarının artırılması\n\nönemli katkılar sağlayacaktır.\n\nMillî Eğitim Bakanımız Sayın Yusuf Tekin'in ve Bakanlık yetkililerimizin, öğrencilerimizin güvenliğine yönelik hassasiyetle yürütülen çalışmaları daha da ileri taşıyacağına inanıyoruz.\n\nAmacımız mesleki eğitimi eleştirmek değil, bu sistemin içerisinde yetişen çocuklarımızın daha güvenli şartlarda eğitim almasına katkı sunmaktır.\n\nÇOCUKLARIMIZ HEM MESLEK ÖĞRENSİN HEM DE GÜVENLE GELECEĞE HAZIRLANSIN!\n\nBu konuda atılacak her olumlu adımın öğrencilerimiz, ailelerimiz ve mesleki eğitim sistemimiz açısından son derece kıymetli olacağını düşünüyoruz.\n\nMESEM öğrencilerinin hakları ve güvenliğine ilişkin gelişmelerden haberdar olmak için @memurbulteni’ni takip edin.",
-   "kaynak": "Memur Bülteni · Instagram",
-   "kaynakUrl": "https://www.instagram.com/p/DgCb3qaRETG/",
-   "gorsel": "data/ig/17893592868686507.jpg"
   }
  ]
 };
