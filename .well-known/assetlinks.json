@@ -1,8 +1,11 @@
 [{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "net.memurbulteni.app",
-        "sha256_cert_fingerprints": ["BE:2E:FC:D9:78:5F:2A:F0:77:C9:66:CB:27:47:BC:B5:0E:10:EA:D8:D8:C2:D8:C8:47:8C:40:A3:0B:03:50:FF"]
-      }
-    }]
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "net.memurbulteni.app",
+    "sha256_cert_fingerprints": [
+      "01:F5:2D:BB:57:E8:F3:27:39:C7:ED:8D:3B:69:6B:17:A2:43:13:51:FB:CD:CB:11:66:58:BA:37:BB:F0:5A:F9",
+      "BE:2E:FC:D9:78:5F:2A:F0:77:C9:66:CB:27:47:BC:B5:0E:10:EA:D8:D8:C2:D8:C8:47:8C:40:A3:0B:03:50:FF"
+    ]
+  }
+}]
