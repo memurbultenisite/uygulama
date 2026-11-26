@@ -10,9 +10,11 @@ const HABER_DOSYA = path.join(KOK, "data/haberler.js");
 const IG_KLASOR = path.join(KOK, "data/ig");
 const DURUM_DOSYA = path.join(IG_KLASOR, "durum.json");
 const ENFAZLA = 60;
-const API = "https://graph.instagram.com";
-
 const TOKEN = (process.env.IG_TOKEN || "").trim();
+// EAA… ile başlayan belirteç: Facebook Graph (süresiz sistem kullanıcısı belirteci). IG… ile başlayan: Instagram Graph.
+const FB_TIPI = TOKEN.startsWith("EAA");
+const API = FB_TIPI ? "https://graph.facebook.com" : "https://graph.instagram.com";
+const IG_ID = (process.env.IG_USER_ID || "17841480070033918").trim();
 const TEST = process.env.IG_TEST_JSON; // yerel deneme için
 
 /* ---------- Yardımcılar ---------- */
@@ -93,7 +95,7 @@ async function ig(yol, param = {}){
 async function paylasimlariGetir(){
   if (TEST) return JSON.parse(fs.readFileSync(TEST, "utf8")).data;
   const alan = "id,caption,media_type,media_url,thumbnail_url,permalink,timestamp,children{media_type,media_url,thumbnail_url}";
-  let j = await ig("/me/media", { fields: alan, limit: 50 });
+  let j = await ig((FB_TIPI ? "/" + IG_ID : "/me") + "/media", { fields: alan, limit: 50 });
   let L = j.data || [];
   while (L.length < ENFAZLA && j.paging && j.paging.next) {
     const r = await fetch(j.paging.next); j = await r.json(); if (!j.data) break; L = L.concat(j.data);
@@ -123,7 +125,7 @@ async function gorselIndir(g){
 /* ---------- Belirteç yenileme (60 gün geçerli, haftada bir yenilenir) ---------- */
 async function belirteciYenile(durum){
   const pat = (process.env.GH_PAT || "").trim(), depo = process.env.GITHUB_REPOSITORY;
-  if (!pat || !depo || TEST) return;
+  if (!pat || !depo || TEST || FB_TIPI) return; // süresiz belirteç yenilenmez
   const son = durum.sonYenileme ? Date.parse(durum.sonYenileme) : 0;
   if (Date.now() - son < 7 * 864e5) return;
   try {
