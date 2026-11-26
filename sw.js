@@ -1,5 +1,5 @@
 /* Memur Bülteni – çevrimdışı önbellek. Yeni sürümde SURUM değişir. */
-const SURUM = "mb-2026-11-26b";
+const SURUM = "mb-2026-11-26c";
 const CEKIRDEK = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/logo-96.png", "./data/ilanlar.js", "./data/haberler.js"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(SURUM).then(c => c.addAll(CEKIRDEK)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(k => Promise.all(k.filter(x => x !== SURUM).map(x => caches.delete(x)))).then(() => self.clients.claim())); });

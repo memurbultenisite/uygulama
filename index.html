@@ -87,7 +87,7 @@ main.wrap{padding:14px 14px 30px}
 .mn-k b{display:block;font-family:"Plus Jakarta Sans",sans-serif;font-size:22px;line-height:1.2;margin:8px 0 6px;letter-spacing:-.01em}
 .mn-k small{font-size:13px;opacity:.85}
 .mn-k .kat.ch{background:rgba(255,255,255,.95);color:var(--kc)}
-.mn-k .sdb{background:var(--red);color:#fff;margin-left:6px}
+.mn-k .kat.ch.sdb{background:var(--red);color:#fff;margin-left:6px}
 .mn-nok{display:flex;justify-content:center;gap:6px;margin-top:10px}
 .mn-nok i{width:7px;height:7px;border-radius:999px;background:#c7cfdd;transition:.2s}
 .mn-nok i.on{width:20px;background:var(--navy)}
@@ -212,6 +212,7 @@ main.wrap{padding:14px 14px 30px}
 .hd{max-width:720px;margin:0 auto;padding:16px 16px 40px}
 .hd .th{height:180px;margin:-16px -16px 16px;border-radius:0}
 .hd .th svg{width:70px;height:70px}
+.hd-img{display:block;width:calc(100% + 32px);max-width:none;height:auto;margin:-16px -16px 16px;background:#e9edf4}
 .hd h1{font-family:"Plus Jakarta Sans",sans-serif;font-size:calc(24px * var(--fs,1));line-height:1.25;margin:8px 0;letter-spacing:-.01em}
 .hd .t{font-size:13px;color:var(--muted)}
 .hd .o{font-weight:700;font-size:calc(17px * var(--fs,1));line-height:1.5;margin:16px 0}
@@ -490,9 +491,9 @@ function haberAc(id, gecmis = true){
   HACIK = x;
   const ilgili = H.filter(y => y.id !== x.id && y.kategori === x.kategori).slice(0, 3);
   const diger = ilgili.length ? ilgili : H.filter(y => y.id !== x.id).slice(0, 3);
-  $("#hdIc").innerHTML = `<article class="hd">${th(x)}${katEt(x, true)}${x.sonDakika ? ' <span class="kat ch" style="--kc:var(--red)">Son dakika</span>' : ""}
+  $("#hdIc").innerHTML = `<article class="hd">${x.gorsel ? `<img class="hd-img" src="${esc(x.gorsel)}" alt="">` : th(x)}${katEt(x, true)}${x.sonDakika ? ' <span class="kat ch" style="--kc:var(--red)">Son dakika</span>' : ""}
     <h1 id="hdBas">${esc(x.baslik)}</h1><div class="t">${trTarih(x.tarih)}${x.saat ? " " + esc(x.saat) : ""} · Memur Bülteni</div>
-    <p class="o">${esc(x.ozet)}</p><div class="m">${esc(x.metin || "")}</div>
+    ${x.ozet ? `<p class="o">${esc(x.ozet)}</p>` : ""}<div class="m">${esc(x.metin || "")}</div>
     ${x.kaynak ? `<div class="kay">Kaynak: ${x.kaynakUrl ? `<a href="${esc(x.kaynakUrl)}" target="_blank" rel="noopener">${esc(x.kaynak)} ↗</a>` : esc(x.kaynak)}</div>` : ""}
     ${diger.length ? `<div class="sb"><h2>${ilgili.length ? "İlgili haberler" : "Diğer haberler"}</h2></div><div class="hl">${diger.map(hk).join("")}</div>` : ""}</article>`;
   $("#hdKaydet").setAttribute("aria-pressed", KH.has(x.id));
