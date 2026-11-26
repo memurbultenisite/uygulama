@@ -1,0 +1,42 @@
+name: Instagram haberleri
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+
+jobs:
+  cek:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Instagram paylaşımlarını çek
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: node scripts/instagram.mjs
+      - name: Değişiklik varsa kaydet ve siteyi güncelle
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "$(git status --porcelain data)" ]; then
+            git config user.name "memur-bulteni-bot"
+            git config user.email "memurbultenisite@users.noreply.github.com"
+            git add data
+            git commit -m "Instagram haberleri güncellendi"
+            git push
+            gh api -X POST "repos/${{ github.repository }}/pages/builds" >/dev/null || true
+          else
+            echo "Değişiklik yok."
+          fi
