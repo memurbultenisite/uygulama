@@ -84,8 +84,24 @@ export function ilanCoz(ham, yayin){
     const ay = AYLAR.indexOf(m[2]) + 1, py = Number(yayin.slice(0, 4)), pm = Number(yayin.slice(5, 7));
     tarihler.push(iso(m[3] || (ay < pm ? py + 1 : py), ay, m[1]));
   }
-  const gecerli = tarihler.filter(t => t >= yayin).sort();
-  const son = gecerli.length ? gecerli[gecerli.length - 1] : null;
+  // Son başvuru tarihini seç: "son başvuru / … kadar / … sona erecek" yanındaki tarih öncelikli;
+  // yoksa yayından sonraki 60 gün içindeki en geç tarih (program bitiş tarihleri gibi uzak tarihler elenir).
+  const sinir = new Date(Date.parse(yayin) + 60 * 864e5).toISOString().slice(0, 10);
+  const lk = lowerTr(kaynak);
+  const yakin = [];
+  const tarihRe = new RegExp("(\\d{1,2})[./-](\\d{1,2})[./-](\\d{4})|(\\d{1,2})\\s+(" + AYLAR.join("|") + ")(?:\\s+(\\d{4}))?", "g");
+  for (const m of lk.matchAll(tarihRe)) {
+    const once = lk.slice(Math.max(0, m.index - 40), m.index).split("\n").pop(), sonra = lk.slice(m.index + m[0].length, m.index + m[0].length + 40).split("\n")[0];
+    const programTarihi = /program|başlangıç|kura|işbaşı|sınav/.test(once);
+    if (!programTarihi && (/son\s*(başvuru|gün|tarih)|başvuru\s*tarih|başvurular[^.]*$|kapan/.test(once) || /^(?:['’][a-zçğıöşü]{0,4})?[ \t,]*(?:\d{4}[ \t]*)?(?:tarihine[ \t]+)?(?:(?:pazartesi|salı|çarşamba|perşembe|cuma|cumartesi|pazar)[ \t]+)?(?:günü[ \t]+)?(kadar|sona|bit|son\b)/.test(sonra))) {
+      let t;
+      if (m[1]) t = iso(m[3], m[2], m[1]);
+      else { const ay = AYLAR.indexOf(m[5]) + 1, py = Number(yayin.slice(0, 4)), pm = Number(yayin.slice(5, 7)); t = iso(m[6] || (ay < pm ? py + 1 : py), ay, m[4]); }
+      if (t >= yayin) yakin.push(t);
+    }
+  }
+  const gecerli = tarihler.filter(t => t >= yayin && t <= sinir).sort();
+  const son = sonSatir && tarihler.length ? tarihler.sort().pop() : yakin.length ? yakin.sort().pop() : gecerli.length ? gecerli[gecerli.length - 1] : null;
 
   // İl: "İl:" satırı ya da metinde geçen ilk il adı
   let il = bul(R("[İIiı]l")).replace(/[.\s]+$/, "");
