@@ -5,6 +5,19 @@ window.MB_HABERLER = {
  "iletisim": "memurbultenisite@gmail.com",
  "haberler": [
   {
+   "id": "ig_18137084381497657",
+   "tarih": "2026-11-27",
+   "saat": "11:54",
+   "kategori": "Öğretmen",
+   "manset": true,
+   "baslik": "BRANŞLARA GÖRE KONTENJAN DAĞILIMI",
+   "ozet": "Almanca: 2 ▪️ Arapça: 20 ▪️ Ayakkabı ve Saraciye Teknolojisi: 1 ▪️ Beden Eğitimi: 190 ▪️ Bilgisayar ve Öğretim Teknolojileri: 8 ▪️ Bilişim Teknolojileri: 49 ▪️ Biyoloji: 68 ▪️ Biyomedikal Cihaz…",
+   "metin": "▪️ Almanca: 2 ▪️ Arapça: 20 ▪️ Ayakkabı ve Saraciye Teknolojisi: 1 ▪️ Beden Eğitimi: 190 ▪️ Bilgisayar ve Öğretim Teknolojileri: 8 ▪️ Bilişim Teknolojileri: 49 ▪️ Biyoloji: 68 ▪️ Biyomedikal Cihaz Teknolojileri: 5 ▪️ Coğrafya: 62 ▪️ Denizcilik / Gemi Elektroniği: 1 ▪️ Denizcilik / Gemi Makineleri: 10 ▪️ Denizcilik / Gemi Yönetimi: 10 ▪️ Din Kültürü ve Ahlak Bilgisi: 1.051 ▪️ El Sanatları Teknolojisi: 2 ▪️ Elektrik-Elektronik Teknolojisi / Elektrik: 96 ▪️ Elektrik-Elektronik Teknolojisi / Elektronik: 35 ▪️ Endüstriyel Otomasyon Teknolojileri: 35 ▪️ Felsefe: 72 ▪️ Fen Bilimleri: 348 ▪️ Fizik: 191 ▪️ Gemi Yapımı / Gemi İnşa: 2 ▪️ Gıda Teknolojisi: 5 ▪️ Giyim Üretim Teknolojisi / Moda Tasarım Teknolojileri: 13 ▪️ Görsel Sanatlar: 62 ▪️ Grafik ve Fotoğraf / Grafik: 15 ▪️ Güzellik ve Saç Bakım Hizmetleri: 2 ▪️ Hayvan Sağlığı: 5 ▪️ Hayvan Yetiştiriciliği: 1 ▪️ İlköğretim Matematik: 249 ▪️ İmam-Hatip Lisesi Meslek Dersleri: 76 ▪️ İngilizce: 1.101 ▪️ İtfaiyecilik ve Yangın Güvenliği: 2 ▪️ Kimya / Kimya Teknolojisi: 243 ▪️ Konaklama ve Seyahat Hizmetleri: 5 ▪️ Kuyumculuk Teknolojisi: 9 ▪️ Laboratuvar Hizmetleri: 1 ▪️ Makine Teknolojisi / Makine ve Kalıp: 45 ▪️ Matematik: 161 ▪️ Metal Teknolojisi: 40 ▪️ Mobilya ve İç Mekân Tasarımı: 35 ▪️ Motorlu Araçlar Teknolojisi: 96 ▪️ Müzik: 144 ▪️ Okul Öncesi: 792 ▪️ Özel Eğitim: 2.842 ▪️ Plastik Teknolojisi: 3 ▪️ Raylı Sistemler Elektrik-Elektronik: 2 ▪️ Rehberlik: 1.059 ▪️ Rusça: 12 ▪️ Sınıf Öğretmenliği: 3.976 ▪️ Sosyal Bilgiler: 538 ▪️ Tarım Teknolojileri: 25 ▪️ Tarih: 155 ▪️ Teknoloji ve Tasarım: 18 ▪️ Tesisat Teknolojisi ve İklimlendirme: 35 ▪️ Tiyatro: 2 ▪️ Türk Dili ve Edebiyatı: 103 ▪️ Türkçe: 719 ▪️ Uçak Bakım / Uçak Elektroniği: 1 ▪️ Uçak Bakım / Uçak Gövde-Motor: 1 ▪️ Ulaştırma Hizmetleri / Lojistik: 2 ▪️ Ulaştırma Hizmetleri / Sivil Havacılık: 1 ▪️ Kürtçe / Kurmançi: 15 ▪️ Kürtçe / Zazaki: 1 ▪️ Yenilenebilir Enerji Teknolojileri: 9 ▪️ Yiyecek İçecek Hizmetleri: 121",
+   "kaynak": "Memur Bülteni · Instagram",
+   "kaynakUrl": "https://www.instagram.com/p/DgPTDwuEVAa/",
+   "gorsel": "data/ig/18137084381497657.jpg"
+  },
+  {
    "id": "ig_18143736856619670",
    "tarih": "2026-11-27",
    "saat": "11:07",
@@ -51,7 +64,7 @@ window.MB_HABERLER = {
    "manset": true,
    "baslik": "BURSA BÜYÜKŞEHİR BELEDİYESİ KPSS ŞARTSIZ 40 PERSONEL ALACAK!",
    "ozet": "Paylaşılan ilana göre Bursa Büyükşehir Belediyesi iştiraki BİNTED bünyesinde istihdam edilmek üzere 40 daimi itfaiye destek personeli alınacak.",
-   "metin": "BAŞVURU ŞARTLARI\n\n▪️ En az lise mezunu olmak. ▪️ 40 yaşını doldurmamış olmak. ▪️ Bursa’da ikamet etmek. ▪️ C, CE, C1 veya C1E sınıfı geçerli sürücü belgesine sahip olmak. ▪️ SRC2, SRC4 ve psikoteknik belgelerine sahip olmak.\n\nKPSS şartı aranmayacak.\n\n📌 Kontenjan: 40 kişi 📌 İstihdam şekli: Daimi işçi 📌 Başvuru tarihleri: 26-30 Kasım 2026 📌 Başvuru şekli: Online 📌 Son başvuru tarihi: 30 Kasım 2026\n\nAdayların başvuru öncesinde kurumun resmî ilanını ve başvuru koşullarını kontrol etmeleri gerekiyor.\n\nKamu personeli ve işçi alımlarından haberdar olmak için @memurbulteni'ni takip edin.",
+   "metin": "BAŞVURU ŞARTLARI\n\n▪️ En az lise mezunu olmak. ▪️ 40 yaşını doldurmamış olmak. ▪️ Bursa’da ikamet etmek. ▪️ C, CE, C1 veya C1E sınıfı geçerli sürücü belgesine sahip olmak. ▪️ SRC2, SRC4 ve psikoteknik belgelerine sahip olmak.\n\nKPSS şartı aranmayacak.\n\nAdayların başvuru öncesinde kurumun resmî ilanını ve başvuru koşullarını kontrol etmeleri gerekiyor.\n\nKamu personeli ve işçi alımlarından haberdar olmak için @memurbulteni'ni takip edin.",
    "kaynak": "Memur Bülteni · Instagram",
    "kaynakUrl": "https://www.instagram.com/p/DgN95ciEeiJ/",
    "gorsel": "data/ig/18001989684043087.jpg"
@@ -221,7 +234,7 @@ window.MB_HABERLER = {
    "manset": true,
    "baslik": "DİYARBAKIR’DA İŞKUR 120 KİŞİLİK ALIM YAPACAK!",
    "ozet": "Diyarbakır İŞKUR İl Müdürlüğü ile İl Tarım ve Orman Müdürlüğü iş birliğinde, kamusal alanların temizliği ve diğer faaliyetlerin desteklenmesi amacıyla İşgücü Uyum Programı (İUP) kapsamında 120…",
-   "metin": "Diyarbakır İŞKUR İl Müdürlüğü ile İl Tarım ve Orman Müdürlüğü iş birliğinde, kamusal alanların temizliği ve diğer faaliyetlerin desteklenmesi amacıyla İşgücü Uyum Programı (İUP) kapsamında 120 katılımcı alınacak.\n\nBAŞVURU YAPABİLECEK İLÇELER\n\nBağlar, Bismil, Çermik, Çınar, Çüngüş, Dicle, Eğil, Ergani, Hazro, Kayapınar, Kocaköy, Lice, Sur ve Yenişehir.\n\nALIM TAKVİMİ\n\n▪️ Kontenjan: 120 kişi ▪️ KPSS şartı: Yok ▪️ Başvuru tarihleri: 25-29 Kasım 2026 ▪️ Seçim yöntemi: Noter kurası ▪️ Kura tarihi: 8 Aralık 2026 ▪️ Sonuç açıklama tarihi: 18 Aralık 2026 ▪️ Program başlangıcı: 21 Aralık 2026 ▪️ Program bitişi: 30 Haziran 2027 ▪️ Fiilî çalışma süresi: 82 gün\n\nBAŞVURU ŞARTLARI\n\n▪️ İŞKUR’un belirlediği katılım şartlarını taşımak. ▪️ Hane gelirinin net asgari ücretin iki katını aşmaması. ▪️ İlgili aktif işgücü veya işsizlik sigortası programlarından yararlanmıyor olmak.\n\nAdayların ayrıntılı başvuru şartlarını ve başvuru kanallarını İŞKUR’un resmî ilanından kontrol etmeleri gerekiyor.\n\nKaynak: Diyarbakır İŞKUR İl Müdürlüğü\n\nGüncel kamu personeli, işçi ve İUP alımlarından haberdar olmak için @memurbulteni'ni takip edin.",
+   "metin": "Diyarbakır İŞKUR İl Müdürlüğü ile İl Tarım ve Orman Müdürlüğü iş birliğinde, kamusal alanların temizliği ve diğer faaliyetlerin desteklenmesi amacıyla İşgücü Uyum Programı (İUP) kapsamında 120 katılımcı alınacak.\n\nBAŞVURU YAPABİLECEK İLÇELER\n\nBağlar, Bismil, Çermik, Çınar, Çüngüş, Dicle, Eğil, Ergani, Hazro, Kayapınar, Kocaköy, Lice, Sur ve Yenişehir.\n\nALIM TAKVİMİ\n\nBAŞVURU ŞARTLARI\n\n▪️ İŞKUR’un belirlediği katılım şartlarını taşımak. ▪️ Hane gelirinin net asgari ücretin iki katını aşmaması. ▪️ İlgili aktif işgücü veya işsizlik sigortası programlarından yararlanmıyor olmak.\n\nAdayların ayrıntılı başvuru şartlarını ve başvuru kanallarını İŞKUR’un resmî ilanından kontrol etmeleri gerekiyor.\n\nKaynak: Diyarbakır İŞKUR İl Müdürlüğü\n\nGüncel kamu personeli, işçi ve İUP alımlarından haberdar olmak için @memurbulteni'ni takip edin.",
    "kaynak": "Memur Bülteni · Instagram",
    "kaynakUrl": "https://www.instagram.com/p/DgKqBo4AjGr/",
    "gorsel": "data/ig/18151974559560815.jpg"
@@ -438,7 +451,7 @@ window.MB_HABERLER = {
    "manset": true,
    "baslik": "TEKİRDAĞ’DA KPSS’SİZ 4 ÖZEL GÜVENLİK GÖREVLİSİ ALINACAK!",
    "ozet": "Tekirdağ Su ve Kanalizasyon İdaresi (TESKİ) Personel A.Ş. bünyesinde 4 özel güvenlik görevlisi istihdam edilecek.",
-   "metin": "KPSS şartı aranmayan alım için başvurular devam ediyor.\n\nBAŞVURU ŞARTLARI\n\n▪️ En az ön lisans mezunu olmak.\n▪️ 35 yaşından gün almamış olmak.\n▪️ Özel güvenlik kimlik kartına sahip olmak.\n▪️ Çerkezköy, Kapaklı veya Saray ilçelerinde ikamet etmek.\n▪️ İlanda belirtilen diğer başvuru şartlarını taşımak.\n\nBAŞVURU DETAYLARI\n\n▪️ Kontenjan: 4 kişi\n▪️ KPSS şartı: Yok\n▪️ Başvuru tarihleri: 23-25 Kasım 2026\n▪️ Başvuru şekli: Şahsen\n\nAdayların başvuru öncesinde İŞKUR üzerinden kurumun resmî ilanını ve başvuru koşullarını incelemeleri gerekiyor.\n\nKamu personeli ve işçi alımlarından haberdar olmak için @memurbulteni'ni takip edin.",
+   "metin": "KPSS şartı aranmayan alım için başvurular devam ediyor.\n\nBAŞVURU ŞARTLARI\n\n▪️ En az ön lisans mezunu olmak.\n▪️ 35 yaşından gün almamış olmak.\n▪️ Özel güvenlik kimlik kartına sahip olmak.\n▪️ Çerkezköy, Kapaklı veya Saray ilçelerinde ikamet etmek.\n▪️ İlanda belirtilen diğer başvuru şartlarını taşımak.\n\nBAŞVURU DETAYLARI\n\n▪️ KPSS şartı: Yok\n▪️ Başvuru tarihleri: 23-25 Kasım 2026\n▪️ Başvuru şekli: Şahsen\n\nAdayların başvuru öncesinde İŞKUR üzerinden kurumun resmî ilanını ve başvuru koşullarını incelemeleri gerekiyor.\n\nKamu personeli ve işçi alımlarından haberdar olmak için @memurbulteni'ni takip edin.",
    "kaynak": "Memur Bülteni · Instagram",
    "kaynakUrl": "https://www.instagram.com/p/DgIZq1BEeuj/",
    "gorsel": "data/ig/18123715099990125.jpg"
@@ -464,7 +477,7 @@ window.MB_HABERLER = {
    "manset": true,
    "baslik": "İBB 43 SPOR EĞİTMENİ ALIMI YAPACAK!",
    "ozet": "İstanbul Büyükşehir Belediyesi (İBB) iştiraki İstanbul Spor Etkinlikleri A.Ş. bünyesinde daimi olarak istihdam edilmek üzere 43 spor eğitmeni alımı yapılacağı bildirildi.",
-   "metin": "BAŞVURU ŞARTLARI\n\n▪️ Üniversitelerin Beden Eğitimi ve Spor Yüksekokulu (BESYO) veya spor fakültelerinden mezun olmak. ▪️ İlanda belirtilen diğer başvuru şartlarını taşımak.\n\nALIM DETAYLARI\n\n▪️ Kontenjan: 43 kişi ▪️ İstihdam şekli: Daimi ▪️ Son başvuru tarihi: 2 Aralık 2026 ▪️ Başvuru şekli: Online\n\nAdayların başvuru öncesinde kurumun resmî ilanını incelemeleri gerekiyor.\n\nKamu personeli ve işçi alımlarından haberdar olmak için @memurbulteni'ni takip edin.",
+   "metin": "BAŞVURU ŞARTLARI\n\n▪️ Üniversitelerin Beden Eğitimi ve Spor Yüksekokulu (BESYO) veya spor fakültelerinden mezun olmak. ▪️ İlanda belirtilen diğer başvuru şartlarını taşımak.\n\nALIM DETAYLARI\n\nAdayların başvuru öncesinde kurumun resmî ilanını incelemeleri gerekiyor.\n\nKamu personeli ve işçi alımlarından haberdar olmak için @memurbulteni'ni takip edin.",
    "kaynak": "Memur Bülteni · Instagram",
    "kaynakUrl": "https://www.instagram.com/p/DgIGKaAAmxu/",
    "gorsel": "data/ig/18155954518551894.jpg"
@@ -490,7 +503,7 @@ window.MB_HABERLER = {
    "manset": true,
    "baslik": "KÜTAHYA’DA KPSS ŞARTI OLMADAN 48 KİŞİLİK İŞKUR İUP ALIMI YAPILACAK!",
    "ozet": "Kütahya İŞKUR, İl Kültür ve Turizm Müdürlüğü ile İdare Mahkemesi bünyesinde İşgücü Uyum Programı (İUP) kapsamında toplam 48 katılımcı alınacağını duyurdu.",
-   "metin": "KONTENJAN DAĞILIMI\n\nİl Kültür ve Turizm Müdürlüğü:\n\nKütahya Merkez: 33\n\nÇavdarhisar: 2\n\nSimav: 2\n\nDumlupınar: 1\n\nEmet: 1\n\nHisarcık: 1\n\nDomaniç: 1\n\nPazarlar: 1\n\nŞaphane: 1\n\nKütahya İdare Mahkemesi: 5 kişi\n\nBAŞVURU ŞARTLARI\n\n18 yaşını tamamlamış olmak.\n\nSon bir ay içerisinde SGK kaydı bulunmamak.\n\nHane gelirinin 56.151 TL’yi aşmaması.\n\nİlanlarda KPSS ve öğrenim şartı belirtilmedi.\n\nDaha önce Toplum Yararına Program’dan (TYP) yararlananlar da başvurabilecek.\n\nBAŞVURU VE PROGRAM TAKVİMİ\n\nBaşvuru: 25–29 Kasım 2026\n\nKatılımcı seçimi: 3 Aralık 2026\n\nProgram başlangıcı: 14 Aralık 2026\n\nProgram bitişi: 30 Haziran 2027\n\nNASIL BAŞVURU YAPILACAK?\n\nBaşvurular e-Devlet, esube.iskur.gov.tr, ALO 170 ve İŞKUR hizmet merkezleri üzerinden yapılabilecek.\n\nKatılımcılar bakım, onarım, çevre düzenlemesi ve temizlik faaliyetlerinde görev alacak.\n\nProgram geçici süreli olup kadrolu veya sürekli işçi istihdamı niteliğinde değildir.\n\nKaynak: Kütahya İŞKUR\n\nBu ve benzeri iş fırsatlarından yararlanmak için @memurbulteni ni takip edin.",
+   "metin": "KONTENJAN DAĞILIMI\n\nİl Kültür ve Turizm Müdürlüğü:\n\nKütahya Merkez: 33\n\nÇavdarhisar: 2\n\nSimav: 2\n\nDumlupınar: 1\n\nEmet: 1\n\nHisarcık: 1\n\nDomaniç: 1\n\nPazarlar: 1\n\nŞaphane: 1\n\nKütahya İdare Mahkemesi: 5 kişi\n\nBAŞVURU ŞARTLARI\n\n18 yaşını tamamlamış olmak.\n\nSon bir ay içerisinde SGK kaydı bulunmamak.\n\nHane gelirinin 56.151 TL’yi aşmaması.\n\nİlanlarda KPSS ve öğrenim şartı belirtilmedi.\n\nDaha önce Toplum Yararına Program’dan (TYP) yararlananlar da başvurabilecek.\n\nBAŞVURU VE PROGRAM TAKVİMİ\n\nKatılımcı seçimi: 3 Aralık 2026\n\nProgram başlangıcı: 14 Aralık 2026\n\nProgram bitişi: 30 Haziran 2027\n\nNASIL BAŞVURU YAPILACAK?\n\nBaşvurular e-Devlet, esube.iskur.gov.tr, ALO 170 ve İŞKUR hizmet merkezleri üzerinden yapılabilecek.\n\nKatılımcılar bakım, onarım, çevre düzenlemesi ve temizlik faaliyetlerinde görev alacak.\n\nProgram geçici süreli olup kadrolu veya sürekli işçi istihdamı niteliğinde değildir.\n\nKaynak: Kütahya İŞKUR\n\nBu ve benzeri iş fırsatlarından yararlanmak için @memurbulteni ni takip edin.",
    "kaynak": "Memur Bülteni · Instagram",
    "kaynakUrl": "https://www.instagram.com/p/DgH74NBkTss/",
    "gorsel": "data/ig/18145477078612458.jpg"
@@ -885,7 +898,7 @@ window.MB_HABERLER = {
    "manset": true,
    "baslik": "BARTIN ÜNİVERSİTESİ 60 KPSS PUANIYLA, BÖLÜM ŞARTI OLMADAN PERSONEL ALACAK!",
    "ozet": "Bartın Üniversitesi Rektörlüğü, en az 60 KPSS puanıyla 1 sözleşmeli büro personeli alımı yapacağını duyurdu. Herhangi bir ön lisans programından mezun olan adaylar başvurabilecek. Alımda yazılı veya…",
-   "metin": "Bartın Üniversitesi Rektörlüğü, en az 60 KPSS puanıyla 1 sözleşmeli büro personeli alımı yapacağını duyurdu. Herhangi bir ön lisans programından mezun olan adaylar başvurabilecek. Alımda yazılı veya sözlü sınav yapılmayacak.\n\nBAŞVURU ŞARTLARI\n\n- Kontenjan: 1 büro personeli (Kadın/Erkek)\n- Öğrenim: Herhangi bir ön lisans programından mezun olmak.\n- KPSS: 2026 KPSS P93 puan türünden en az 60 almak.\n- Yaş: 1 Ocak 1991 ve sonrasında doğmuş olmak.\n- İstihdam: 657 sayılı Kanun'un 4/B maddesi kapsamında sözleşmeli personel.\n\nMÜLAKAT YAPILMAYACAK!\n\nBaşvuru şartlarını sağlayan adaylar arasından, yazılı veya sözlü sınav yapılmadan KPSS puan üstünlüğüne göre yerleştirme gerçekleştirilecek.\n\nSON BAŞVURU 5 ARALIK!\n\nBaşvurular 20 Kasım 2026 saat 09.00'da başladı ve 5 Aralık 2026 saat 13.00'te sona erecek.\n\nBaşvurular e-Devlet üzerinden Kariyer Kapısı Kamu İşe Alım Platformu aracılığıyla yapılacak.\n\nDİKKAT! BELGE TESLİMİ ZORUNLU\n\nElektronik başvurunun ardından oluşturulan Aday Başvuru Bilgileri belgesinin, en geç 8 Aralık 2026 saat 17.30'a kadar Bartın Üniversitesine şahsen veya noter onaylı vekâletname ile teslim edilmesi gerekiyor. Kargo ve posta yoluyla gönderilen belgeler kabul edilmeyecek.\n\nBaşvuru adresi: https://kariyerkapisi.gov.tr/isealim\n\nKamu personel alımlarından ve yeni iş fırsatlarından yararlanmak için @memurbulteni'ni takip edin.",
+   "metin": "Bartın Üniversitesi Rektörlüğü, en az 60 KPSS puanıyla 1 sözleşmeli büro personeli alımı yapacağını duyurdu. Herhangi bir ön lisans programından mezun olan adaylar başvurabilecek. Alımda yazılı veya sözlü sınav yapılmayacak.\n\nBAŞVURU ŞARTLARI\n\n- Öğrenim: Herhangi bir ön lisans programından mezun olmak.\n- Yaş: 1 Ocak 1991 ve sonrasında doğmuş olmak.\n- İstihdam: 657 sayılı Kanun'un 4/B maddesi kapsamında sözleşmeli personel.\n\nMÜLAKAT YAPILMAYACAK!\n\nBaşvuru şartlarını sağlayan adaylar arasından, yazılı veya sözlü sınav yapılmadan KPSS puan üstünlüğüne göre yerleştirme gerçekleştirilecek.\n\nSON BAŞVURU 5 ARALIK!\n\nBaşvurular 20 Kasım 2026 saat 09.00'da başladı ve 5 Aralık 2026 saat 13.00'te sona erecek.\n\nBaşvurular e-Devlet üzerinden Kariyer Kapısı Kamu İşe Alım Platformu aracılığıyla yapılacak.\n\nDİKKAT! BELGE TESLİMİ ZORUNLU\n\nElektronik başvurunun ardından oluşturulan Aday Başvuru Bilgileri belgesinin, en geç 8 Aralık 2026 saat 17.30'a kadar Bartın Üniversitesine şahsen veya noter onaylı vekâletname ile teslim edilmesi gerekiyor. Kargo ve posta yoluyla gönderilen belgeler kabul edilmeyecek.\n\nBaşvuru adresi: https://kariyerkapisi.gov.tr/isealim\n\nKamu personel alımlarından ve yeni iş fırsatlarından yararlanmak için @memurbulteni'ni takip edin.",
    "kaynak": "Memur Bülteni · Instagram",
    "kaynakUrl": "https://www.instagram.com/p/DgDrWgUkdWt/",
    "gorsel": "data/ig/18115854416622318.jpg"
@@ -903,19 +916,6 @@ window.MB_HABERLER = {
    "kaynak": "Memur Bülteni · Instagram",
    "kaynakUrl": "https://www.instagram.com/p/DgDkxWikU2p/",
    "gorsel": "data/ig/17914921977592147.jpg"
-  },
-  {
-   "id": "ig_17980386035932825",
-   "tarih": "2026-11-22",
-   "saat": "22:19",
-   "kategori": "Alım & İlan",
-   "manset": true,
-   "baslik": "KAYSERİ’DE KIŞ SEZONU İÇİN 21 KAYAK VE SNOWBOARD EĞİTMENİ ALINACAK",
-   "ozet": "Kayseri Büyükşehir Belediyesi iştiraki Kayseri Spor Etkinlikleri A.Ş., kış sezonunda görev yapmak üzere 15 kayak eğitmeni ve 6 snowboard eğitmeni alacak. Eğitmenler 4 ay boyunca tam zamanlı çalışacak.",
-   "metin": "KİMLER BAŞVURABİLİR?\n\nAdayların 1990 veya sonrasında doğmuş ve en az lise mezunu olması gerekiyor. Her iki pozisyon için de ilgili branşta eğitmenlik deneyimi ve federasyon onaylı en az 1. kademe eğitmenlik belgesi aranıyor. Adayların hafta sonları ve akşam saatlerinde çalışabilmesi gerekiyor.\n\nSON BAŞVURU 24 KASIM SALI\n\nAdaylar, başvurularını 24 Kasım 2026 Salı günü saat 23.59’a kadar yalnızca Kayseri Spor A.Ş.’nin çevrim içi başvuru ekranından yapabilecek.\n\nBelediye personel alımlarından haberdar olmak için @memurbulteni’ni takip edin.",
-   "kaynak": "Memur Bülteni · Instagram",
-   "kaynakUrl": "https://www.instagram.com/p/DgDioGBkfWR/",
-   "gorsel": "data/ig/17980386035932825.jpg"
   }
  ]
 };
