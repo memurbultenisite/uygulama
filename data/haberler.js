@@ -5,6 +5,32 @@ window.MB_HABERLER = {
  "iletisim": "memurbultenisite@gmail.com",
  "haberler": [
   {
+   "id": "ig_18116080094612044",
+   "tarih": "2026-11-27",
+   "saat": "13:04",
+   "kategori": "KPSS & Sınav",
+   "manset": true,
+   "baslik": "2026 KPSS ORTAÖĞRETİM BRANŞ SIRALAMALARI AÇIKLANDI!",
+   "ozet": "ÖSYM, 2026 KPSS Ortaöğretim sınavına katılan adayların branş bazındaki sıralamalarını 27 Kasım 2026 itibarıyla erişime açtı.",
+   "metin": "Adaylar, ÖSYM Aday İşlemleri Sistemi (AİS) üzerinden T.C. kimlik numaraları ve aday şifreleriyle giriş yaparak kendi branşlarındaki sıralamalarını öğrenebilecek.\n\nBranş sıralamaları, adayların kendi alanlarındaki başarı durumlarını değerlendirmelerine yardımcı olacak olup kesin atama veya yerleştirme sonucu niteliği taşımamaktadır.\n\nSorgulama adresi: ais.osym.gov.tr\nKPSS, kamu personeli alımları ve atama gelişmelerinden haberdar olmak için @memurbulteni’ni takip edin.",
+   "kaynak": "Memur Bülteni · Instagram",
+   "kaynakUrl": "https://www.instagram.com/p/DgPbHgBRJXe/",
+   "gorsel": "data/ig/18116080094612044.jpg"
+  },
+  {
+   "id": "ig_17999917359010508",
+   "tarih": "2026-11-27",
+   "saat": "12:28",
+   "kategori": "Alım & İlan",
+   "manset": true,
+   "baslik": "KASTAMONU VE TOKAT’TA DAİMİ KAMU İŞÇİSİ ALIMI!",
+   "ozet": "İŞKUR üzerinden yayımlandığı belirtilen ilanlara göre, iki kamu kurumu bünyesinde toplam 3 daimi işçi alımı yapılacak.",
+   "metin": "KASTAMONU SULAMA BİRLİĞİ BAŞKANLIĞI\n\n▪️ Unvan: Ziraat Mühendisi\n▪️ Çalışma yeri: Kastamonu Merkez\n▪️ İlan numarası: 00009917457\n\nNİKSAR BELEDİYE BAŞKANLIĞI\n\n▪️ Unvan: Fatura ve Hesap Tahsilatçısı\n▪️ Çalışma yeri: Tokat/Niksar\n▪️ İlan numarası: 00009917749\n\nALIM DETAYLARI\n\n▪️ Çalışma statüsü: Daimi kamu işçisi\n▪️ Çalışma şekli: Tam zamanlı\n▪️ Son başvuru tarihi: 1 Aralık 2026\n▪️ Başvuru adresi: esube.iskur.gov.tr\n\nAdayların başvuru öncesinde İŞKUR üzerinden özel başvuru şartlarını ve ilanların güncel durumunu kontrol etmeleri gerekiyor.\n\nKamu personeli ve işçi alımlarından haberdar olmak için @memurbulteni'ni takip edin.",
+   "kaynak": "Memur Bülteni · Instagram",
+   "kaynakUrl": "https://www.instagram.com/p/DgPW9H5kaca/",
+   "gorsel": "data/ig/17999917359010508.jpg"
+  },
+  {
    "id": "ig_18137084381497657",
    "tarih": "2026-11-27",
    "saat": "11:54",
@@ -889,33 +915,6 @@ window.MB_HABERLER = {
    "kaynak": "Memur Bülteni · Instagram",
    "kaynakUrl": "https://www.instagram.com/p/DgDtAKTEc7t/",
    "gorsel": "data/ig/18118425272013026.jpg"
-  },
-  {
-   "id": "ig_18115854416622318",
-   "tarih": "2026-11-22",
-   "saat": "23:35",
-   "kategori": "Alım & İlan",
-   "manset": true,
-   "baslik": "BARTIN ÜNİVERSİTESİ 60 KPSS PUANIYLA, BÖLÜM ŞARTI OLMADAN PERSONEL ALACAK!",
-   "ozet": "Bartın Üniversitesi Rektörlüğü, en az 60 KPSS puanıyla 1 sözleşmeli büro personeli alımı yapacağını duyurdu. Herhangi bir ön lisans programından mezun olan adaylar başvurabilecek. Alımda yazılı veya…",
-   "metin": "Bartın Üniversitesi Rektörlüğü, en az 60 KPSS puanıyla 1 sözleşmeli büro personeli alımı yapacağını duyurdu. Herhangi bir ön lisans programından mezun olan adaylar başvurabilecek. Alımda yazılı veya sözlü sınav yapılmayacak.\n\nBAŞVURU ŞARTLARI\n\n- Öğrenim: Herhangi bir ön lisans programından mezun olmak.\n- Yaş: 1 Ocak 1991 ve sonrasında doğmuş olmak.\n- İstihdam: 657 sayılı Kanun'un 4/B maddesi kapsamında sözleşmeli personel.\n\nMÜLAKAT YAPILMAYACAK!\n\nBaşvuru şartlarını sağlayan adaylar arasından, yazılı veya sözlü sınav yapılmadan KPSS puan üstünlüğüne göre yerleştirme gerçekleştirilecek.\n\nSON BAŞVURU 5 ARALIK!\n\nBaşvurular 20 Kasım 2026 saat 09.00'da başladı ve 5 Aralık 2026 saat 13.00'te sona erecek.\n\nBaşvurular e-Devlet üzerinden Kariyer Kapısı Kamu İşe Alım Platformu aracılığıyla yapılacak.\n\nDİKKAT! BELGE TESLİMİ ZORUNLU\n\nElektronik başvurunun ardından oluşturulan Aday Başvuru Bilgileri belgesinin, en geç 8 Aralık 2026 saat 17.30'a kadar Bartın Üniversitesine şahsen veya noter onaylı vekâletname ile teslim edilmesi gerekiyor. Kargo ve posta yoluyla gönderilen belgeler kabul edilmeyecek.\n\nBaşvuru adresi: https://kariyerkapisi.gov.tr/isealim\n\nKamu personel alımlarından ve yeni iş fırsatlarından yararlanmak için @memurbulteni'ni takip edin.",
-   "kaynak": "Memur Bülteni · Instagram",
-   "kaynakUrl": "https://www.instagram.com/p/DgDrWgUkdWt/",
-   "gorsel": "data/ig/18115854416622318.jpg"
-  },
-  {
-   "id": "ig_17914921977592147",
-   "tarih": "2026-11-22",
-   "saat": "22:38",
-   "kategori": "Alım & İlan",
-   "manset": true,
-   "sonDakika": true,
-   "baslik": "MİT, 10 FARKLI BRANŞTAN DOKTOR ALACAK! İŞTE BAŞVURU ŞARTLARI",
-   "ozet": "Millî İstihbarat Teşkilâtı (MİT), Ankara ve İstanbul'daki Sağlık Hizmetleri Merkezlerinde görevlendirilmek üzere uzman doktor ve pratisyen hekim alımına ilişkin şartları duyurdu.",
-   "metin": "Teşkilat personelinin sağlık ihtiyaçlarını karşılamak amacıyla yapılacak alımlarda, adayların mesleki deneyimleri ve uzmanlık alanlarına göre değerlendirme yapılacak.\n\nHANGİ BRANŞLARDAN DOKTOR ALINACAK?\n\nMİT'in alım duyurusunda 10 farklı branş yer alıyor:\n\n• İç Hastalıkları Uzmanı\n\n• Ortopedi Uzmanı\n\n• Kulak Burun Boğaz Hastalıkları Uzmanı\n\n• Göz Hastalıkları Uzmanı\n\n• Fizik Tedavi ve Rehabilitasyon Uzmanı\n\n• Psikiyatri Uzmanı\n\n• Tıbbi Biyokimya Uzmanı\n\n• Klinik Mikrobiyoloji ve Enfeksiyon Hastalıkları Uzmanı\n\n• Pratisyen Hekim / Aile Hekimliği Uzmanı\n\n• Acil Tıp Uzmanı\n\nBazı uzmanlık alanlarında tanı ve tedavi deneyiminin yanı sıra özel mesleki yeterlilikler de aranıyor.\n\nKİMLER BAŞVURABİLECEK?\n\nAdayların aşağıdaki şartları taşıması gerekiyor:\n\n✅ Türkiye Cumhuriyeti vatandaşı olmak.\n\n✅ 44 yaşını doldurmamış olmak.\n\n✅ Türkiye'de kurulu üniversitelerin tıp fakültelerinden mezun olmak.\n\n✅ Herhangi bir kurum veya kuruluşa karşı mecburi hizmet yükümlülüğü bulunmamak.\n\n✅ Vardiyalı ve nöbetli çalışma düzenine uyum sağlayabilmek.\n\n✅ Gerektiğinde seyahat etmeye ve saha koşullarında çalışmaya uygun olmak.\n\n✅ İletişim becerileri güçlü ve ekip çalışmasına yatkın olmak.\n\nBAŞVURULAR NASIL DEĞERLENDİRİLECEK?\n\nBaşvurularda adayların uzmanlıkları, mesleki deneyimleri ve başvuru şartlarına uygunlukları değerlendirilecek.\n\nİşe alım sürecinde uygun görülen adaylarla görüşme gerçekleştirilecek. Değerlendirmeye alınan adaylara SMS, e-posta veya telefon aracılığıyla ulaşılabilecek.\n\nÖNEMLİ: Özgeçmiş formunun doldurulması, başvurunun kabul edildiği veya işe alımın kesinleştiği anlamına gelmiyor.\n\nBaşvuru yapmayı düşünen adayların güncel ilan durumunu ve tüm koşulları MİT'in resmî kariyer sayfasından kontrol etmeleri gerekiyor.\n\nMİT ve diğer kamu kurumlarının personel alımlarından haberdar olmak için @memurbulteni'ni takip edin.",
-   "kaynak": "Memur Bülteni · Instagram",
-   "kaynakUrl": "https://www.instagram.com/p/DgDkxWikU2p/",
-   "gorsel": "data/ig/17914921977592147.jpg"
   }
  ]
 };
