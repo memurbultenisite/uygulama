@@ -7,6 +7,7 @@ import { execFileSync } from "node:child_process";
 
 const KOK = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const HABER_DOSYA = path.join(KOK, "data/haberler.js");
+const ILAN_DOSYA = path.join(KOK, "data/ig-ilanlar.js");
 const IG_KLASOR = path.join(KOK, "data/ig");
 const DURUM_DOSYA = path.join(IG_KLASOR, "durum.json");
 const ENFAZLA = 60;
@@ -50,13 +51,81 @@ function kategoriBul(metin, etiketler){
 }
 function kisalt(s, n){ if (s.length <= n) return s; const k = s.slice(0, n); const b = k.lastIndexOf(" "); return (b > n * 0.6 ? k.slice(0, b) : k).replace(/[\s,.;:–-]+$/, "") + "…"; }
 
+/* ---------- İlan satırlarını ayrıştır ----------
+   Açıklamanın sonundaki şu satırlar bir paylaşımı İlanlar sekmesine de ekler:
+     İl: Bursa
+     Son gün: 05.12.2026
+     KPSS: P3 en az 70      (ya da: KPSS şartsız)
+     Başvuru: https://...   (ya da: e-Devlet / Kariyer Kapısı)
+     Kurum: ... (isteğe bağlı)   Kişi: 40 (isteğe bağlı)
+   "Son gün" satırı olmayan paylaşım ilan sayılmaz. */
+const ILAN_SATIR = /^[\s•▪►▶️➡️📍📅📌🗓️✅🔹🔸-]*(?:[İIiı]l|son\s*g[üu]n|kpss|ba[şs]vuru|kurum|ki[şs]i|kontenjan)\s*[:：]/iu;
+const anahtar = (satir, re) => { const m = satir.match(re); return m ? m[1].trim() : ""; };
+const ILLER = ["Adana","Adıyaman","Afyonkarahisar","Ağrı","Aksaray","Amasya","Ankara","Antalya","Ardahan","Artvin","Aydın","Balıkesir","Bartın","Batman","Bayburt","Bilecik","Bingöl","Bitlis","Bolu","Burdur","Bursa","Çanakkale","Çankırı","Çorum","Denizli","Diyarbakır","Düzce","Edirne","Elazığ","Erzincan","Erzurum","Eskişehir","Gaziantep","Giresun","Gümüşhane","Hakkari","Hatay","Iğdır","Isparta","İstanbul","İzmir","Kahramanmaraş","Karabük","Karaman","Kars","Kastamonu","Kayseri","Kilis","Kırıkkale","Kırklareli","Kırşehir","Kocaeli","Konya","Kütahya","Malatya","Manisa","Mardin","Mersin","Muğla","Muş","Nevşehir","Niğde","Ordu","Osmaniye","Rize","Sakarya","Samsun","Şanlıurfa","Siirt","Sinop","Sivas","Şırnak","Tekirdağ","Tokat","Trabzon","Tunceli","Uşak","Van","Yalova","Yozgat","Zonguldak"];
+const AYLAR = ["ocak","şubat","mart","nisan","mayıs","haziran","temmuz","ağustos","eylül","ekim","kasım","aralık"];
+// "ilan, ilanı, ilana, ilanlar, ilanları…" geçen paylaşım ilandır; "ilan edildi / ilan etti" gibi duyurular hariç.
+const ILAN_KELIME = /(^|[^\p{L}])ilan(ı|a|lar|ları|ın|ına|da|ında|lara)?(?![\p{L}])(?!\s+(edil|et|olun))/iu;
+const iso = (y, m, d) => `${y}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+export function ilanCoz(ham, yayin){
+  const metin = ham.replace(/\r/g, "");
+  const kucuk = lowerTr(metin);
+  const satirlar = metin.split("\n").map(x => x.trim());
+  const bul = re => { for (const x of satirlar) { const v = anahtar(x, re); if (v) return v; } return ""; };
+  const onEk = "^[\\s•▪►▶️➡️📍📅📌🗓️✅🔹🔸-]*";
+  const R = k => new RegExp(onEk + k + "\\s*[:：]\\s*(.+)$", "iu");
+  const sonSatir = bul(R("son\\s*g[üu]n"));
+  if (!ILAN_KELIME.test(kucuk) && !sonSatir) return null;
+
+  // Son tarih: önce "Son gün:" satırı, yoksa metindeki en geç tarih (yayın tarihinden sonraki)
+  const tarihler = [];
+  const kaynak = sonSatir || metin;
+  for (const m of kaynak.matchAll(/(\d{1,2})[./-](\d{1,2})[./-](\d{4})/g)) tarihler.push(iso(m[3], m[2], m[1]));
+  for (const m of lowerTr(kaynak).matchAll(new RegExp("(\\d{1,2})\\s+(" + AYLAR.join("|") + ")(?:\\s+(\\d{4}))?", "g"))) {
+    const ay = AYLAR.indexOf(m[2]) + 1, py = Number(yayin.slice(0, 4)), pm = Number(yayin.slice(5, 7));
+    tarihler.push(iso(m[3] || (ay < pm ? py + 1 : py), ay, m[1]));
+  }
+  const gecerli = tarihler.filter(t => t >= yayin).sort();
+  const son = gecerli.length ? gecerli[gecerli.length - 1] : null;
+
+  // İl: "İl:" satırı ya da metinde geçen ilk il adı
+  let il = bul(R("[İIiı]l")).replace(/[.\s]+$/, "");
+  if (!il) {
+    let en = null, enI = Infinity;
+    for (const ad of ILLER) { const m = kucuk.match(new RegExp("(^|[^\\p{L}])" + lowerTr(ad) + "(?![\\p{L}]{3})", "u")); if (m && m.index < enI) { en = ad; enI = m.index; } }
+    il = en || "";
+  }
+
+  // KPSS
+  const kpssSatir = bul(R("kpss"));
+  const k = lowerTr(kpssSatir || metin);
+  const sartsiz = /kpss\s*(ş|s)arts[ıi]z|kpss'?\s*siz|kpss\s*(ş|s)art[ıi]\s*(aranma|yok|olmadan)|kpss\s*(puan[ıi]\s*)?(aranmaks[ıi]z[ıi]n|gerekmeden|olmadan)/.test(k) || (kpssSatir && /(ş|s)arts[ıi]z|yok|aranmaz/.test(k));
+  const puan = sartsiz ? [] : [...new Set([...(kpssSatir || metin).matchAll(/\bP\s?(\d{1,3})\b/gi)].map(m => "P" + m[1]))];
+  const enAzM = sartsiz ? null : (k.match(/(?:en\s*az|min(?:imum)?|taban)\s*(\d{2,3})/) || k.match(/(\d{2,3})\s*(?:ve\s*üzeri\s*)?kpss/) || k.match(/kpss\D{0,12}(\d{2,3})\s*(?:puan|ve)/));
+  const kpssVar = /kpss/.test(k);
+  const kisiSatir = bul(R("(?:ki[şs]i|kontenjan)"));
+  const kisiM = (kisiSatir || "").match(/\d+/) || kucuk.match(/(\d{1,3}(?:\.\d{3})?)\s*(?:kişi|personel|işçi|memur|sözleşmeli|polis|öğretmen|uzman|mühendis|şoför|güvenlik|temizlik)/);
+  const basv = bul(R("ba[şs]vuru"));
+  const url = ((basv || metin).match(/https?:\/\/\S+/) || [])[0] || "";
+  const yer = url ? "" : basv ? basv.replace(/[.\s]+$/, "") : /e-?devlet/.test(kucuk) ? "e-Devlet" : /kariyer\s*kap/.test(kucuk) ? "Kariyer Kapısı" : /işkur/.test(kucuk) ? "İŞKUR" : "";
+  return {
+    il: il || "Türkiye geneli",
+    son,
+    puan: sartsiz ? [] : (puan.length ? puan : kpssVar ? ["KPSS"] : []),
+    kpssBilinmiyor: !sartsiz && !kpssVar ? true : undefined,
+    enAz: enAzM ? Number(enAzM[1]) : null,
+    kont: kisiM ? Number(String(kisiM[1] || kisiM[0]).replace(/\./g, "")) : null,
+    yer, url,
+    kurum: bul(R("kurum"))
+  };
+}
+
 /* Instagram açıklamasını başlık / özet / metin olarak böler */
 export function cevir(g){
   const ham = (g.caption || "").replace(/\r/g, "");
   const etiketler = [...ham.matchAll(/#([\p{L}\p{N}_]+)/gu)].map(x => x[1]);
   const satirlar = ham.split("\n").map(x => x.trim());
   // yalnızca etiket/mention içeren satırları ve "takip et" kalıplarını at
-  const temiz = satirlar.filter(x => !/^([#@][\p{L}\p{N}_.]+\s*)+$/u.test(x) && !/takip\s*et|bildirimleri\s*aç|profil(imiz)?deki\s*link/i.test(x));
+  const temiz = satirlar.filter(x => !/^([#@][\p{L}\p{N}_.]+\s*)+$/u.test(x) && !/takip\s*et|bildirimleri\s*aç|profil(imiz)?deki\s*link/i.test(x) && !ILAN_SATIR.test(x));
   const ilk = temiz.findIndex(x => /\p{L}/u.test(x));
   let baslik = ilk >= 0 ? temiz[ilk] : "";
   baslik = baslik.replace(EMOJI_BAS, "").replace(/^(son\s*dak[iıİI]ka|flaş|flas|flaş haber)\s*[:!\-–—|]*\s*/i, "").replace(EMOJI_BAS, "").replace(/\s*#[\p{L}\p{N}_]+/gu, "").trim();
@@ -152,7 +221,7 @@ async function main(){
   const eskiIg = new Map((H.haberler || []).filter(x => String(x.id).startsWith("ig_")).map(x => [x.id, x]));
 
   const paylasimlar = await paylasimlariGetir();
-  const yeni = [];
+  const yeni = [], ilanlar = [];
   for (const g of paylasimlar) {
     const h = cevir(g);
     if (await gorselIndir(g)) h.gorsel = "data/ig/" + g.id + ".jpg";
@@ -161,7 +230,21 @@ async function main(){
     const e = eskiIg.get(h.id);
     if (e && e.elle) Object.assign(h, { kategori: e.kategori, baslik: e.baslik, ozet: e.ozet, metin: e.metin, manset: e.manset, sonDakika: e.sonDakika, elle: true });
     yeni.push(h);
+    const ic = ilanCoz(g.caption || "", h.tarih);
+    if (ic) ilanlar.push({ id: h.id, baslik: h.baslik, kurum: ic.kurum, il: ic.il, puan: ic.puan, kpssBilinmiyor: ic.kpssBilinmiyor, enAz: ic.enAz, kont: ic.kont, yer: ic.yer, son: ic.son, yayin: h.tarih, url: ic.url || h.kaynakUrl, kaynak: h.kaynakUrl, haber: h.id, ig: true });
   }
+
+  // İlanlar: yeni ayrıştırılanlar + eskiden kalan ve süresi dolmamış olanlar (60 paylaşım penceresinden çıksa bile)
+  const bugun = istanbul(new Date().toISOString()).tarih;
+  let eskiIlan = [];
+  if (fs.existsSync(ILAN_DOSYA)) { const c2 = { window: {} }; vm.createContext(c2); try { vm.runInContext(fs.readFileSync(ILAN_DOSYA, "utf8"), c2); eskiIlan = (c2.window.MB_IG_ILANLAR || {}).ilanlar || []; } catch (e) {} }
+  const ilanIds = new Set(ilanlar.map(x => x.id));
+  const otuzGunOnce = istanbul(new Date(Date.now() - 30 * 864e5).toISOString()).tarih;
+  const acik = x => x.son ? x.son >= bugun : x.yayin >= otuzGunOnce;
+  const tumIlan = [...ilanlar, ...eskiIlan.filter(x => !ilanIds.has(x.id))].filter(acik).sort((a, b) => (a.son || "9999").localeCompare(b.son || "9999"));
+  const ilanMetin = "/* Instagram paylaşımlarından otomatik çıkarılan ilanlar (scripts/instagram.mjs yazar). Elle düzenleme. */\nwindow.MB_IG_ILANLAR = " + JSON.stringify({ guncelleme: bugun, ilanlar: tumIlan }, null, 1) + ";\n";
+  const eskiIlanMetin = fs.existsSync(ILAN_DOSYA) ? fs.readFileSync(ILAN_DOSYA, "utf8") : "";
+  if (eskiIlanMetin.replace(/"guncelleme": "[^"]*"/, "") !== ilanMetin.replace(/"guncelleme": "[^"]*"/, "")) { fs.writeFileSync(ILAN_DOSYA, ilanMetin); console.log(`İlanlar güncellendi: ${tumIlan.length} açık ilan.`); }
 
   // kullanılmayan görselleri sil
   const kalan = new Set(yeni.map(h => path.basename(h.gorsel || "")));

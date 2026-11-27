@@ -362,6 +362,7 @@ main.wrap{padding:14px 14px 30px}
 
 <script src="data/ilanlar.js"></script>
 <script src="data/haberler.js"></script>
+<script src="data/ig-ilanlar.js"></script>
 <script>
 "use strict";
 const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -393,7 +394,9 @@ const yaz = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catc
 const HBR = window.MB_HABERLER || { haberler: [] };
 const H = (HBR.haberler || []).slice().sort((a, b) => (b.tarih + (b.saat || "")).localeCompare(a.tarih + (a.saat || "")));
 const ILN = window.KPSS_ILANLAR || { ilanlar: [] };
-const IL = ILN.ilanlar || [];
+const IGI = window.MB_IG_ILANLAR || { ilanlar: [] };
+const IL = [...(IGI.ilanlar || []), ...(ILN.ilanlar || [])];
+const IL_GUN = [IGI.guncelleme, ILN.guncelleme].filter(Boolean).sort().pop();
 const IKON = {
   maas: '<path d="M3 7h18v10H3z"/><circle cx="12" cy="12" r="2.5"/><path d="M6 10v4M18 10v4"/>',
   alim: '<rect x="4" y="7" width="16" height="12" rx="2"/><path d="M9 7V5h6v2M4 12h16"/>',
@@ -457,7 +460,7 @@ function ilanSerit(baslikYazi){
   const L = aktifIlanlar().filter(a => a.son).sort((x, y) => x.son.localeCompare(y.son)).slice(0, 8);
   if (!L.length) return "";
   return `<div class="sb"><h2>${esc(baslikYazi)}</h2><button type="button" data-git="ilan">Tümü →</button></div>
-    <div class="is">${L.map(a => `<a class="ik" href="${esc(a.url)}" target="_blank" rel="noopener">${gunEt(a)}<span class="b">${esc(a.baslik)}</span><span class="k">${esc(baslik(a.kurum))}</span><span class="m">${esc(baslik(a.il))}${a.puan.length ? " · KPSS " + esc(a.puan.slice(0, 2).join("/")) + (a.puan.length > 2 ? "+" : "") : " · KPSS şartsız"}</span></a>`).join("")}
+    <div class="is">${L.map(a => { const ic = `${gunEt(a)}<span class="b">${esc(a.baslik)}</span><span class="k">${esc(baslik(a.kurum || "Memur Bülteni"))}</span><span class="m">${esc(baslik(a.il))}${a.kpssBilinmiyor ? "" : a.puan.length ? " · KPSS " + esc(a.puan.slice(0, 2).join("/")) + (a.puan.length > 2 ? "+" : "") : " · KPSS şartsız"}</span>`; return a.ig && a.haber && H.some(x => x.id === a.haber) ? `<button type="button" class="ik" style="text-align:left;font:inherit" data-haber="${esc(a.haber)}">${ic}</button>` : `<a class="ik" href="${esc(a.url)}" target="_blank" rel="noopener">${ic}</a>`; }).join("")}
     <button type="button" class="ik tum" data-git="ilan">Tüm ilanlar<br>(${aktifIlanlar().length}) →</button></div>`;
 }
 function haberCiz(){
@@ -523,19 +526,20 @@ $("#hdPaylas").addEventListener("click", async () => {
 function ilanKart(a){
   const g = a.son ? gunFark(a.son) : null;
   const c = [];
-  c.push(a.puan.length ? `<span class="cip p">KPSS ${esc(a.puan.join(" / "))}</span>` : `<span class="cip">KPSS şartı yok</span>`);
+  c.push(a.kpssBilinmiyor ? `<span class="cip">KPSS şartı: ilanda</span>` : a.puan.length ? `<span class="cip p">KPSS ${esc(a.puan.join(" / "))}</span>` : `<span class="cip">KPSS şartı yok</span>`);
   if (a.enAz) c.push(`<span class="cip">En az ${a.enAz} puan</span>`);
   if (a.kont) c.push(`<span class="cip">${esc(a.kont)} kişi</span>`);
   if (a.yer) c.push(`<span class="cip">Başvuru: ${esc(a.yer)}</span>`);
   if (a.sinav && a.sinav.length) c.push(`<span class="cip">${esc(a.sinav.join(", "))}</span>`);
   const basla = a.bas && a.bas > bugunISO() ? ` · başvuru ${trTarih(a.bas)}'de başlıyor` : "";
-  return `<article class="kart"><div class="kart-u"><div style="flex:1;min-width:0"><h3>${esc(a.baslik)}</h3><div class="kur">${esc(baslik(a.kurum))} · ${esc(baslik(a.il))}</div></div>
+  return `<article class="kart"><div class="kart-u"><div style="flex:1;min-width:0"><h3>${esc(a.baslik)}</h3><div class="kur">${[a.kurum, a.il].filter(Boolean).map(x => esc(baslik(x))).join(" · ")}</div></div>
     <button type="button" class="yild" data-ikayit="${esc(a.id)}" aria-pressed="${KI.has(a.id)}" aria-label="İlanı kaydet"><svg class="i" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></button></div>
     <div class="cips">${c.join("")}</div>
     <div class="son ${g !== null && g <= 3 ? "acil" : g !== null && g <= 7 ? "yakin" : ""}">${a.son ? `Son başvuru: ${trTarih(a.son)} · ${g < 0 ? "süresi doldu" : g === 0 ? "bugün son gün" : g + " gün kaldı"}${basla}` : "Son başvuru tarihi: ilanda kontrol et"}</div>
     ${a.notu ? `<div class="not">${esc(a.notu)}</div>` : ""}
-    <a class="ac" href="${esc(a.url)}" target="_blank" rel="noopener">İlanı aç ↗</a>
-    <div class="not">Yayın: ${trTarih(a.yayin)} · İlan no ${esc(a.id)}</div></article>`;
+    ${a.ig && a.haber && H.some(x => x.id === a.haber) ? `<button type="button" class="ac" style="width:100%;border:0;background:var(--navy)" data-haber="${esc(a.haber)}">Haberi oku</button>` : ""}
+    ${a.ig && a.url === a.kaynak ? "" : `<a class="ac" href="${esc(a.url)}" target="_blank" rel="noopener">${a.ig ? "Başvuru sayfasını aç ↗" : "İlanı aç ↗"}</a>`}
+    <div class="not">Yayın: ${trTarih(a.yayin)} · ${a.ig ? "Memur Bülteni" : "İlan no " + esc(a.id)}</div></article>`;
 }
 function ilanFormKur(){
   const iller = [...new Set(IL.map(a => a.il))].sort((x, y) => x.localeCompare(y, "tr"));
@@ -547,7 +551,7 @@ function ilanFormKur(){
 function ilanCiz(){
   const A = aktifIlanlar();
   $("#ilSay").textContent = A.length;
-  $("#ilGun").textContent = `Son güncelleme ${trTarih(ILN.guncelleme || bugunISO())} · Kaynak: ilan.gov.tr`;
+  $("#ilGun").textContent = `Son güncelleme ${trTarih(IL_GUN || bugunISO())} · Memur Bülteni ve ilan.gov.tr`;
   $("#ilKs").textContent = KI.size ? "(" + KI.size + ")" : "";
   $$("[data-ilseg]").forEach(b => b.setAttribute("aria-pressed", b.dataset.ilseg === S.ilSeg));
   $("#ilFiltre").hidden = S.ilSeg === "kayit";
@@ -561,7 +565,7 @@ function ilanCiz(){
   const L = A.filter(a => {
     if (il && a.il !== il) return false;
     if (S.ilTur === "kpss" && !a.puan.length) return false;
-    if (S.ilTur === "yok" && a.puan.length) return false;
+    if (S.ilTur === "yok" && (a.puan.length || a.kpssBilinmiyor)) return false;
     if (S.ilTur === "3gun" && !(a.son && gunFark(a.son) <= 3)) return false;
     if (t.length) { const h = lowerTr(a.kurum + " " + a.baslik + " " + a.il + " " + a.puan.join(" ")); if (!t.every(w => h.includes(w))) return false; }
     return true;
