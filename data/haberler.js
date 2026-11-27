@@ -5,6 +5,32 @@ window.MB_HABERLER = {
  "iletisim": "memurbultenisite@gmail.com",
  "haberler": [
   {
+   "id": "ig_18143736856619670",
+   "tarih": "2026-11-27",
+   "saat": "11:07",
+   "kategori": "Öğretmen",
+   "manset": true,
+   "baslik": "AYLIK 5.000 TL’YE VARAN DOĞUM YARDIMI ÖDEMELERİ HESAPLARA YATIRILDI!",
+   "ozet": "Aile ve Sosyal Hizmetler Bakanı Mahinur Özdemir Göktaş, kasım ayı doğum yardımı ödemelerinin annelerin hesaplarına yatırıldığını açıkladı.",
+   "metin": "Bugüne kadar 1 milyon 450 bin 685 anneye toplam 33 milyar 256 milyon 925 bin TL ödeme gerçekleştirildi.\n\nDoğum yardımından toplam 1 milyon 495 bin 87 çocuk yararlanırken, 870 bin 888 çocuk için her ay düzenli ödeme yapılıyor.\n\nDOĞUM YARDIMI TUTARLARI\n\n1 Ocak 2025 ve sonrasında doğan çocuklar için;\n\n▪️ Birinci çocuğa tek seferlik 5.000 TL ▪️ İkinci çocuğa aylık 1.500 TL ▪️ Üçüncü ve sonraki her çocuk için aylık 5.000 TL\n\nDüzenli ödemeler, çocuklar 5 yaşını tamamlayana kadar kesintisiz devam edecek.\n\nBAŞVURULAR NASIL YAPILIR?\n\nBaşvurular e-Devlet ve “İlk Öğretmenim Ailem” mobil uygulaması üzerinden yapılabiliyor.\n\nÖdemeler Halkbank aracılığıyla annelerin hesaplarına yatırılırken, hak sahipleri ödeme durumlarını “İlk Öğretmenim Ailem” uygulaması üzerinden kontrol edebiliyor.\n\nKaynak: Aile ve Sosyal Hizmetler Bakanlığı\n\nDoğum yardımları ve diğer sosyal desteklerden haberdar olmak için @memurbulteni'ni takip edin.",
+   "kaynak": "Memur Bülteni · Instagram",
+   "kaynakUrl": "https://www.instagram.com/p/DgPNt7xxTIf/",
+   "gorsel": "data/ig/18143736856619670.jpg"
+  },
+  {
+   "id": "ig_18018482495953471",
+   "tarih": "2026-11-27",
+   "saat": "10:15",
+   "kategori": "Alım & İlan",
+   "manset": true,
+   "baslik": "SAĞLIK ÇALIŞANLARININ GÖZÜ BAKAN MEMİŞOĞLU’NDA: BİRKAÇ GÜNLÜK FARK, ALTI AYLIK MAĞDURİYETE DÖNÜŞMESİN!",
+   "ozet": "2022 yılında açıklanan 85 bin sağlık personeli alımının ilk etabında atanarak 2023 yılı Ocak ayında göreve başlayan sağlık çalışanları, dört yıllık fiilî hizmet sürelerini 2027 yılı Ocak ayında…",
+   "metin": "2022 yılında açıklanan 85 bin sağlık personeli alımının ilk etabında atanarak 2023 yılı Ocak ayında göreve başlayan sağlık çalışanları, dört yıllık fiilî hizmet sürelerini 2027 yılı Ocak ayında tamamlayacak.\n\nAncak dört yıllık hizmet şartının tayin başvurularının son günü itibarıyla aranması durumunda, bazı sağlık çalışanları birkaç günlük fark nedeniyle 2027 yılı Ocak dönemi iller arası tayin kurasına katılamayabilecek. Bu durum, yıllardır tayin bekleyen personelin yaklaşık altı ay daha beklemesine neden olabilecek.\n\nSağlık çalışanları herhangi bir ayrıcalık değil, dört yıllık fiilî hizmet süresinin hesaplanmasında son başvuru tarihi yerine kura tarihinin esas alınmasını talep ediyor.\n\nSağlık Bakanımız Prof. Dr. Kemal Memişoğlu’nun, sağlık çalışanlarının bu haklı beklentisine duyarsız kalmayacağına ve yayımlanacak tayin kılavuzunda mağduriyetleri önleyecek bir düzenlemeye yer vereceğine inanıyoruz.\n\nYapılacak küçük bir düzenleme, tayin bekleyen pek çok sağlık çalışanı ve ailesi için büyük bir mutluluğa dönüşebilir.\n\nSayın Bakanımızın bu konuda gerekli hassasiyeti göstereceğine inanıyor, sağlık çalışanları adına güzel bir haber bekliyoruz.\n\nGelişmelerden haberdar olmak için @memurbulteni'ni takip edin.",
+   "kaynak": "Memur Bülteni · Instagram",
+   "kaynakUrl": "https://www.instagram.com/p/DgPHs5ARlIn/",
+   "gorsel": "data/ig/18018482495953471.jpg"
+  },
+  {
    "id": "ig_18139143985661271",
    "tarih": "2026-11-27",
    "saat": "00:38",
@@ -890,32 +916,6 @@ window.MB_HABERLER = {
    "kaynak": "Memur Bülteni · Instagram",
    "kaynakUrl": "https://www.instagram.com/p/DgDioGBkfWR/",
    "gorsel": "data/ig/17980386035932825.jpg"
-  },
-  {
-   "id": "ig_18045929465908039",
-   "tarih": "2026-11-22",
-   "saat": "13:38",
-   "kategori": "Alım & İlan",
-   "manset": true,
-   "baslik": "YARGITAY'DAN BOŞANMADA EMSAL KARAR! MİRAS KALAN EV VE ARAÇLAR PAYLAŞILACAK MI?",
-   "ozet": "Yargıtay 2. Hukuk Dairesi, boşanma davalarında miras kalan mal varlıklarının paylaşılmasına ilişkin dikkat çeken bir karara imza attı. Yüksek Mahkeme, eşlerden birine ailesinden kalan mirasın kişisel…",
-   "metin": "Yargıtay 2. Hukuk Dairesi, boşanma davalarında miras kalan mal varlıklarının paylaşılmasına ilişkin dikkat çeken bir karara imza attı. Yüksek Mahkeme, eşlerden birine ailesinden kalan mirasın kişisel mal olduğunu ve kural olarak boşanmada paylaşılamayacağını vurguladı.\n\nKOCASI, EŞİNİN DAİRE VE ARAÇLARINDAN PAY İSTEDİ!\n\nBoşanma sürecindeki bir çiftin mal paylaşımı anlaşmazlığında davacı erkek, evlilik süresince edinildiğini belirttiği çok sayıda daire ve araçtan pay talep etti.\n\nDavalı kadın ise söz konusu mal varlıklarının babasından kalan mirasla edinildiğini savunarak paylaşım talebine karşı çıktı.\n\nYARGITAY: MİRAS KİŞİSEL MALDIR!\n\nTürk Medeni Kanunu'nun 220. maddesine göre eşlerden birine miras yoluyla veya karşılıksız kazanma yoluyla geçen mal varlıkları kişisel mal kabul ediliyor.\n\nAncak miras kalan malların kira gibi gelirleri, kural olarak edinilmiş mal kapsamında değerlendirilebiliyor.\n\nARAÇ İÇİN KARAR BOZULDU!\n\nYargıtay, dava konusu aracın satın alınmasında kullanılan paranın kaynağının yeterince araştırılmadığını belirledi.\n\nAracın alımında kullanılan 4 bin TL'nin kadının kişisel malından karşılandığının kabul edilmesi, kalan kısmın ise aksi ispatlanamadığından edinilmiş mal sayılarak denkleştirme yapılması gerektiğine hükmetti.\n\nBu nedenle eksik incelemeyle verilen karar bozuldu.\n\nBOŞANACAK EŞLER DİKKAT!\n\nMiras kalan malın kendisi kural olarak paylaşılmasa da evlilik süresince edinilmiş mallardan yapılan katkılar ve malın satın alınmasında kullanılan paranın kaynağı, mal paylaşımının sonucunu değiştirebiliyor.\n\nHer uyuşmazlık, mal rejimi ve somut deliller çerçevesinde ayrı değerlendiriliyor.\n\nBu tür önemli hukuki kararlardan ve güncel gelişmelerden yararlanmak için @memurbulteni'ni takip edin.",
-   "kaynak": "Memur Bülteni · Instagram",
-   "kaynakUrl": "https://www.instagram.com/p/DgCnCgsRlm9/",
-   "gorsel": "data/ig/18045929465908039.jpg"
-  },
-  {
-   "id": "ig_18505540753101675",
-   "tarih": "2026-11-22",
-   "saat": "13:22",
-   "kategori": "Maaş & Zam",
-   "manset": true,
-   "baslik": "SAĞLIK ÇALIŞANLARINDAN TEPKİ: PERFORMANS HESAPLANIYOR, TEŞVİK ÖDEMELERİ NEDEN YAPILMIYOR?",
-   "ozet": "Sağlık Bakanlığı bünyesinde görev yapan sağlık çalışanlarının teşvik ek ödemelerinde yaşandığı belirtilen gecikmeler, tepkilere neden oldu.",
-   "metin": "Kasım ayının sonuna yaklaşılırken bazı sağlık çalışanları, teşvik ödemelerinin henüz hesaplarına yatırılmadığını ve Ek Ödeme Bilgi Sistemi (EKOBS) üzerinden yürütülen işlemlerin tamamlanamadığını dile getiriyor.\n\n“PERFORMANS HESAPLANIYOR, ÖDEMEYE GELİNCE AKSAKLIK YAŞANIYOR!”\n\nSağlık çalışanları, hekimlerin gerçekleştirdiği işlemlerin, hasta sayılarının ve sunulan sağlık hizmetlerinin ayrıntılı şekilde takip edildiğini ancak bu emeğin karşılığı olan teşvik ödemelerinde gecikmeler yaşandığını belirterek duruma tepki gösteriyor.\n\nÖdemelerin zamanında yapılmasının önemine dikkat çeken çalışanlar, kira, kredi, fatura ve diğer temel ihtiyaçlarını belirli bir ödeme düzenine göre planladıklarını ifade ediyor.\n\nSAĞLIK BAKANLIĞINA ÇAĞRI!\n\nSağlık çalışanları, EKOBS işlemlerinde yaşandığı belirtilen aksaklıkların giderilmesini, teşvik ödemelerine ilişkin takvimin netleştirilmesini ve ödemelerin düzenli şekilde gerçekleştirilmesini bekliyor.\n\nSağlık hizmetlerinin kesintisiz sürdürülmesinde büyük emek veren çalışanlar, mali haklarının da aynı hassasiyetle korunmasını istiyor.\n\nSAĞLIK ÇALIŞANLARI SORUYOR: TEŞVİK ÖDEMELERİ NE ZAMAN HESAPLARA YATACAK?\n\nSağlık çalışanlarının mali haklarına ilişkin gelişmelerden yararlanmak için @memurbulteni'ni takip edin.",
-   "kaynak": "Memur Bülteni · Instagram",
-   "kaynakUrl": "https://www.instagram.com/p/DgClLFMR3AO/",
-   "gorsel": "data/ig/18505540753101675.jpg"
   }
  ]
 };
