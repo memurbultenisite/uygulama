@@ -119,7 +119,10 @@ export function ilanCoz(ham, yayin){
   const enAzM = sartsiz ? null : (k.match(/(?:en\s*az|min(?:imum)?|taban)\s*(\d{2,3})/) || k.match(/(\d{2,3})\s*(?:ve\s*üzeri\s*)?kpss/) || k.match(/kpss\D{0,12}(\d{2,3})\s*(?:puan|ve)/));
   const kpssVar = /kpss/.test(k);
   const kisiSatir = bul(R("(?:ki[şs]i|kontenjan)"));
-  const kisiM = (kisiSatir || "").match(/\d+/) || kucuk.match(/(\d{1,3}(?:\.\d{3})?)\s*(?:kişi|personel|işçi|memur|sözleşmeli|polis|öğretmen|uzman|mühendis|şoför|güvenlik|temizlik)/);
+  const ilkSatir = lowerTr(satirlar.find(x => /\p{L}/u.test(x)) || "");
+  const KISI_RE = /(\d{1,3}(?:\.\d{3})?)\s*(?:bin\s*)?(?:kişi|personel|işçi|memur|sözleşmeli|polis|öğretmen|uzman|mühendis|şoför|güvenlik|temizlik|büro|akademik|doktor|eğitmen|erbaş|asker|sürekli)/;
+  const basSayi = (() => { for (const m of ilkSatir.matchAll(/(\d{1,3}(?:\.\d{3})*)(\s*bin)?(?![\d.])\s*(\S+)?/g)) { if (/^(tl|lira|puan|kpss|farklı|branş|pozisyon|kurum|ilçe|il\b|yıl|gün|ay)/.test(m[3] || "") ) continue; const n = Number(m[1].replace(/\./g, "")) * (m[2] ? 1000 : 1); return [null, String(n)]; } return null; })();
+  const kisiM = (kisiSatir || "").match(/\d+/) || basSayi || ilkSatir.match(KISI_RE) || kucuk.match(/(\d{1,3}(?:\.\d{3})?)\s*(?:kişi|personel|işçi|memur|sözleşmeli|polis|öğretmen|uzman|mühendis|şoför|güvenlik|temizlik)/);
   const basv = bul(R("ba[şs]vuru"));
   const url = ((basv || metin).match(/https?:\/\/\S+/) || [])[0] || "";
   const yer = url ? "" : basv ? basv.replace(/[.\s]+$/, "") : /e-?devlet/.test(kucuk) ? "e-Devlet" : /kariyer\s*kap/.test(kucuk) ? "Kariyer Kapısı" : /işkur/.test(kucuk) ? "İŞKUR" : "";
